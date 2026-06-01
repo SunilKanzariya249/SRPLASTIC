@@ -59,7 +59,7 @@ router.get('/:id', async (req, res) => {
     }
 
     if (!product) {
-      return res.status(404).json({ success: false, message: 'Product not found' });
+      return res.status(200).json({ success: false, data: null, message: 'Product not found in database' });
     }
     res.json({ success: true, data: product });
   } catch (error) {

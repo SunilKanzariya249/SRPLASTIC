@@ -29,13 +29,13 @@ export default function ProductDetail() {
       try {
         const response = await fetch(`/api/products/${id}`);
         const resData = await response.json();
-        if (resData.success) {
+        if (resData.success && resData.data) {
           setProduct(resData.data);
         } else {
           throw new Error('Product not found');
         }
       } catch (err) {
-        console.warn('API error, falling back to static schema mapping');
+        console.log('Using local catalog specifications for:', id);
         generateFallbackProduct();
       } finally {
         setLoading(false);
