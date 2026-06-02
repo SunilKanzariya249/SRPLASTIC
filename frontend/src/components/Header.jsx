@@ -83,14 +83,14 @@ export default function Header() {
 
       {/* Main Navigation Bar */}
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg shadow-md">
-            <span className="text-secondary font-black text-xl">SR</span>
-          </div>
-          <div>
-            <span className="text-lg md:text-xl font-bold tracking-tight text-primary block">SR PLASTIC</span>
-            <span className="text-[10px] font-medium tracking-wider text-slate-500 block uppercase -mt-1">Moulds & Machinery</span>
-          </div>
+        <Link to="/" className="flex items-center space-x-3">
+          <img 
+            src="/sr-logo.jpeg" 
+            alt="SR Plastic Logo" 
+            className="w-auto h-10  object-cover" 
+            onError={(e) => { e.target.style.display = 'none'; }}
+          />
+          
         </Link>
 
         {/* Desktop Menu */}

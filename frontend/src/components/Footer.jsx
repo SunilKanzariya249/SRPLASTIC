@@ -8,11 +8,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         {/* Company Description */}
         <div className="space-y-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-9 h-9 bg-white flex items-center justify-center rounded shadow">
-              <span className="text-primary font-black text-lg">SR</span>
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white">SR PLASTIC</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/sr-logo.jpeg" 
+              alt="SR Plastic Logo" 
+              className="w-auto h-10  object-cover" 
+              onError={(e) => { e.target.style.display = 'none'; }}
+            />
+          
           </div>
           <p className="text-sm text-slate-400 leading-relaxed">
             Leading manufacturer and supplier of premium quality PVC & Rubber Moulds, Cover Blocks, Paver Block Machinery, Iron Oxide Colors, and Hardener Additives.
