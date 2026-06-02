@@ -23,6 +23,33 @@ export default function Contact() {
     e.preventDefault();
     setSubmitting(true);
     try {
+      // 1. Submit to Web3Forms for client-side email delivery (required for Web3Forms free tier)
+      try {
+        const web3formsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '211fba8c-8248-4b56-8890-ec7281e2f3ee';
+        const web3Message = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Company: ${formData.companyName || 'N/A'}
+Subject: ${formData.subject || 'General Contact Form'}
+Message: ${formData.message}
+`;
+        await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: web3formsAccessKey,
+            name: formData.name,
+            email: formData.email,
+            subject: `SRPLASTIC Contact Us: ${formData.subject || 'New Message'}`,
+            message: web3Message
+          })
+        });
+      } catch (web3Err) {
+        console.warn('Web3Forms notification failed:', web3Err);
+      }
+
+      // 2. Submit to backend to store in MongoDB
       const API_URL = import.meta.env.VITE_API_URL || '';
       const response = await fetch(`${API_URL}/api/inquiries`, {
         method: 'POST',
