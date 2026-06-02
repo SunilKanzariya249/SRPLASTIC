@@ -179,6 +179,82 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-16 md:py-24 bg-white overflow-hidden border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            {/* Left Content Column */}
+            <div className="space-y-6">
+              <div>
+                <span className="text-xs font-bold text-secondary tracking-widest uppercase mb-2 bg-secondary/15 px-3 py-1 rounded inline-block">
+                  ABOUT US
+                </span>
+                <h2 className="text-3xl md:text-5xl font-black text-primary leading-tight tracking-tight mt-2">
+                  SR Plastic
+                </h2>
+                <div className="w-12 h-1 bg-secondary mt-3"></div>
+              </div>
+
+              <div className="text-slate-600 text-sm md:text-base leading-relaxed space-y-4 font-medium">
+                <p>
+                  SR Plastic specializes in providing high-quality solutions for the paver block manufacturing industry. Founded by <strong className="text-primary font-extrabold">Rohit Hadiyal</strong>, we offer premium <strong className="text-primary font-bold">Paver Block Chemicals, Iron Oxide Colors, Paver Block Moulds, and Machinery</strong> designed to deliver consistent performance and reliable results.
+                </p>
+                <p>
+                  With a strong commitment to quality, innovation, and customer satisfaction, we help manufacturers improve product durability, production efficiency, and overall business growth. Our focus is to provide dependable products and professional support that meet the evolving demands of the construction industry.
+                </p>
+              </div>
+
+              {/* Checklist */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4">
+                {[
+                  "Premium Quality Products",
+                  "Complete Paver Block Solutions",
+                  "Reliable Performance & Consistency",
+                  "Customer-Focused Service",
+                  "Trusted Industry Expertise",
+                  "Commitment to Excellence"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center space-x-2.5 text-slate-700 text-sm font-semibold">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-[10px] font-bold border border-emerald-150">
+                      ✔
+                    </span>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Tagline Callout */}
+              <div className="pt-4">
+                <div className="p-4 bg-slate-50 border-l-4 border-secondary rounded-r-xl">
+                  <p className="text-primary font-black italic text-sm md:text-base tracking-wide">
+                    Building Strength, Delivering Quality, Creating Trust.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Poster Column */}
+            <div className="relative group">
+              {/* Background decorative colored sheet */}
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              
+              {/* Image wrapper */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-100">
+                <img 
+                  src="/about page poster.png" 
+                  alt="SR Plastic About Us Poster" 
+                  className="w-full h-auto object-cover transition duration-700 ease-out group-hover:scale-105"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none transition duration-500 group-hover:from-primary/5" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Feature Badges */}
       <section className="bg-white border-y border-slate-200 py-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
