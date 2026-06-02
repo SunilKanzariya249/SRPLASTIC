@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { QuoteProvider } from './context/QuoteContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import StickyContactButtons from './components/StickyContactButtons';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -17,6 +18,7 @@ function Layout({ children }) {
         {children}
       </main>
       <Footer />
+      <StickyContactButtons />
     </div>
   );
 }
