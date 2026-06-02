@@ -9,23 +9,30 @@ export default function Home() {
   const slides = [
     {
       title: "PREMIUM PVC & RUBBER MOULDS",
-      subtitle: "For High-Durability Paver Blocks & Wall Claddings",
-      description: "Manufactured using high-strength polymers that deliver pristine dimensional accuracy and smooth concrete surface finishes.",
-      image: "/product_images/p2_colorado_paver.png",
+      subtitle: "Precision Engineered Paver Block Moulds",
+      description: "Manufactured using high-strength polymers that deliver pristine dimensional accuracy, smooth concrete surface finishes, and long lifecycle endurance.",
+      image: "/paver block mould banner.png",
       link: "/products?category=PVC Mould"
     },
     {
       title: "HEAVY-DUTY INDUSTRIAL MACHINERY",
-      subtitle: "Vibrator Tables, Roller Pan Mixers & Concrete Mixers",
+      subtitle: "Vibrator Tables, Roller Pan Mixers & Mixers",
       description: "Engineered for harsh factory workloads, high capacities (up to 4000 units/shift), and minimal power consumption.",
-      image: "/product_images/p87_vibrator_table_machine_for_paver_block.png",
+      image: "/paver block machinery banner.png",
       link: "/products?category=Machinery"
     },
     {
-      title: "HIGH-QUALITY IRON OXIDES & HARDENERS",
-      subtitle: "Bright Pigments & Dual-Action Superplasticizers",
-      description: "UV-stable colors and strengthening additives that boost concrete tensile strength and maintain bright luster for years.",
-      image: "/product_images/p92_iron_oxide_pigment(colors)_iron_oxide_pigment_is_w.png",
+      title: "HIGH-QUALITY CHEMICALS & HARDENERS",
+      subtitle: "Dual-Action Concrete Strength Enhancers",
+      description: "Advanced superplasticizers and strengthening additives that boost concrete tensile strength and speed up demoulding cycles.",
+      image: "/paver block chemicals hardner banner.png",
+      link: "/products?category=Chemicals & Colors"
+    },
+    {
+      title: "VIBRANT IRON OXIDE COLORS",
+      subtitle: "Premium UV-Resistant Coloring Pigments",
+      description: "UV-stable iron oxide pigments with high dispersing capability that maintain bright concrete luster for years.",
+      image: "/iron oxide color banner.png",
       link: "/products?category=Chemicals & Colors"
     }
   ];
@@ -122,7 +129,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Carousel */}
-      <section className="relative h-[480px] md:h-[580px] bg-slate-900 overflow-hidden text-white">
+      <section className="relative h-[450px] md:h-[calc(100vh-76px)] bg-slate-900 overflow-hidden text-white">
         {slides.map((slide, idx) => (
           <div
             key={idx}
@@ -130,48 +137,14 @@ export default function Home() {
               idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
-            {/* Background Image overlay */}
-            <div className="absolute inset-0 bg-slate-950/75 mix-blend-multiply"></div>
-            
-            {/* Dynamic Grid Layout */}
-            <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full">
-              <div className="space-y-4 md:space-y-6">
-                <span className="bg-secondary text-primary font-extrabold text-xs px-3 py-1.5 rounded-full inline-block tracking-wider uppercase">
-                  {slide.title}
-                </span>
-                <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-white">
-                  {slide.subtitle}
-                </h1>
-                <p className="text-sm md:text-lg text-slate-300 font-light leading-relaxed">
-                  {slide.description}
-                </p>
-                <div className="pt-2 flex space-x-4">
-                  <Link
-                    to={slide.link}
-                    className="bg-secondary hover:bg-secondary-dark text-primary font-bold px-6 py-3 rounded-lg shadow transition flex items-center space-x-2 text-sm"
-                  >
-                    <span>View Collection</span>
-                    <ArrowRight size={16} />
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="bg-transparent hover:bg-white hover:text-slate-900 border-2 border-white text-white font-bold px-6 py-3 rounded-lg transition text-sm"
-                  >
-                    Get Call Back
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Product Visual */}
-              <div className="hidden md:flex justify-center items-center h-80">
-                <img
-                  src={slide.image}
-                  alt={slide.subtitle}
-                  className="max-h-full max-w-[80%] object-contain rounded-xl shadow-2xl border-4 border-slate-700/50 bg-slate-800/80 p-4"
-                  onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
-                />
-              </div>
-            </div>
+            {/* Full-Screen Banner Image */}
+            <img 
+              src={slide.image} 
+              alt={slide.title}
+              className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[6000ms] ease-out ${
+                idx === currentSlide ? 'scale-100' : 'scale-105'
+              }`}
+            />
           </div>
         ))}
 
@@ -179,15 +152,31 @@ export default function Home() {
         <button
           onClick={prevSlide}
           className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-2.5 rounded-full text-white transition focus:outline-none"
+          aria-label="Previous Slide"
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={nextSlide}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-2.5 rounded-full text-white transition focus:outline-none"
+          aria-label="Next Slide"
         >
           <ChevronRight size={20} />
         </button>
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2.5">
+          {slides.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentSlide ? 'bg-secondary w-7' : 'bg-white/40 hover:bg-white/70'
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Feature Badges */}
