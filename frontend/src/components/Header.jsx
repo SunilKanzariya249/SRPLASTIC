@@ -29,7 +29,8 @@ export default function Header() {
     if (quoteItems.length === 0) return;
     setSubmitting(true);
     try {
-      const response = await fetch('/api/inquiries', {
+      const API_URL = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${API_URL}/api/inquiries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

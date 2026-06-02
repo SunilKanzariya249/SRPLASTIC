@@ -30,7 +30,8 @@ export default function Products() {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        let url = `/api/products?category=${selectedCategory}`;
+        const API_URL = import.meta.env.VITE_API_URL || '';
+        let url = `${API_URL}/api/products?category=${selectedCategory}`;
         if (searchTerm) {
           url += `&search=${searchTerm}`;
         }

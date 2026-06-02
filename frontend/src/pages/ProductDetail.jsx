@@ -27,7 +27,8 @@ export default function ProductDetail() {
     const fetchProduct = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/api/products/${id}`);
+        const API_URL = import.meta.env.VITE_API_URL || '';
+        const response = await fetch(`${API_URL}/api/products/${id}`);
         const resData = await response.json();
         if (resData.success && resData.data) {
           setProduct(resData.data);
@@ -67,7 +68,8 @@ export default function ProductDetail() {
     if (!product) return;
     setSubmitting(true);
     try {
-      const response = await fetch('/api/inquiries', {
+      const API_URL = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${API_URL}/api/inquiries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
