@@ -129,7 +129,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Carousel */}
-      <section className="relative h-[450px] md:h-[calc(100vh-76px)] bg-slate-900 overflow-hidden text-white">
+      <section className="relative w-full h-auto aspect-video md:aspect-auto md:h-[calc(100vh-76px)] bg-slate-900 overflow-hidden text-white">
         {slides.map((slide, idx) => (
           <div
             key={idx}
@@ -151,27 +151,27 @@ export default function Home() {
         {/* Slide Controls */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-2.5 rounded-full text-white transition focus:outline-none"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
           aria-label="Previous Slide"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-2.5 rounded-full text-white transition focus:outline-none"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
           aria-label="Next Slide"
         >
-          <ChevronRight size={20} />
+          <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
         </button>
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2.5">
+        <div className="absolute bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-1.5 md:space-x-2.5">
           {slides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                idx === currentSlide ? 'bg-secondary w-7' : 'bg-white/40 hover:bg-white/70'
+              className={`w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentSlide ? 'bg-secondary w-5 md:w-7' : 'bg-white/40 hover:bg-white/70'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
