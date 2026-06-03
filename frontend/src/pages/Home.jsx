@@ -50,42 +50,48 @@ export default function Home() {
       count: "30+ Models",
       desc: "Prismatic molds like Colorado, Cosmic, Damru, and Hexagon for premium concrete blocks.",
       image: "/paver block plastic mould card.png",
-      query: "PVC Mould"
+      query: "PVC Mould",
+      slug: "pvc-mould"
     },
     {
       name: "Rubber Moulds",
       count: "40+ Models",
       desc: "Flexible, long-life, tear-resistant rubber molds for heavy-duty paving tiles.",
       image: "/paver block pvc rubber mould card.png",
-      query: "Rubber Mould"
+      query: "Rubber Mould",
+      slug: "rubber-mould"
     },
     {
       name: "Machinery & Mixers",
       count: "6+ Machines",
       desc: "Vibratory table layouts, pan concrete mixers, and color layer mixers.",
       image: "/paver block machinery card.png",
-      query: "Machinery"
+      query: "Machinery",
+      slug: "machinery"
     },
     {
       name: "Chemicals & Hardeners",
       count: "10+ Formulas",
       desc: "High-grade superplasticizers and chemical formulations to speed up concrete curing.",
       image: "/paver block chemicals hardner card.png",
-      query: "Chemicals & Hardener"
+      query: "Chemicals & Hardener",
+      slug: "chemicals-hardner"
     },
     {
       name: "Iron Oxide Colors",
       count: "12+ Shades",
       desc: "UV-stable premium coloring pigments for lasting concrete block luster.",
       image: "/iron oxide color card.png",
-      query: "Color"
+      query: "Color",
+      slug: "color"
     },
     {
       name: "Recycle Plastic Sheets",
       count: "Eco-Friendly",
       desc: "Sustainable, high-durability plastic sheets for industrial stack palettes.",
       image: "/recycle plastic sheet card.png",
-      query: "Plastic Sheet"
+      query: "Plastic Sheet",
+      slug: "plastic-sheet"
     }
   ];
 
@@ -301,7 +307,7 @@ export default function Home() {
             {categories.map((cat, idx) => (
               <Link
                 key={idx}
-                to={`/products?category=${encodeURIComponent(cat.query)}`}
+                to={`/category/${cat.slug}`}
                 className="relative block rounded-2xl shadow-md hover:shadow-xl overflow-hidden border border-slate-200 group transition duration-300"
               >
                 <img

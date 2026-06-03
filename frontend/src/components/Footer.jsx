@@ -63,43 +63,43 @@ export default function Footer() {
           <h3 className="text-white font-bold text-base mb-6 border-l-4 border-secondary pl-3">Our Offerings</h3>
           <ul className="space-y-3.5 text-sm">
             <li>
-              <Link to="/products?category=PVC Mould" className="flex items-center hover:text-white transition">
+              <Link to="/category/pvc-mould" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>PVC Paver Moulds</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Rubber Mould" className="flex items-center hover:text-white transition">
+              <Link to="/category/rubber-mould" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Rubber Paver Moulds</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Cover Block" className="flex items-center hover:text-white transition">
+              <Link to="/category/cover-block" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Curb & Cover Blocks</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Machinery" className="flex items-center hover:text-white transition">
+              <Link to="/category/machinery" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Vibrator Table & Mixers</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Color" className="flex items-center hover:text-white transition">
+              <Link to="/category/color" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Iron Oxide Colors</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Chemicals & Hardener" className="flex items-center hover:text-white transition">
+              <Link to="/category/chemicals-hardner" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Chemicals & Hardeners</span>
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Plastic Sheet" className="flex items-center hover:text-white transition">
+              <Link to="/category/plastic-sheet" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
                 <span>Recycle Plastic Sheets</span>
               </Link>
