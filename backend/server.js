@@ -36,6 +36,11 @@ app.use('/api/inquiries', require('./routes/inquiryRoutes'));
 // or serve them from D:\SRPLASTIC\product_images directly.
 app.use('/product_images', express.static(path.join(__dirname, '../product_images')));
 
+// Keep-alive route for Render cron jobs
+app.get('/api/ping', (req, res) => {
+  res.status(200).json({ success: true, message: 'pong', timestamp: new Date() });
+});
+
 // Default Route
 app.get('/', (req, res) => {
   res.send('SRPLASTIC API is running.');
