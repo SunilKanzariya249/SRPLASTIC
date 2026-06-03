@@ -34,6 +34,13 @@ export default function Home() {
       description: "UV-stable iron oxide pigments with high dispersing capability that maintain bright concrete luster for years.",
       image: "/iron oxide color banner.png",
       link: "/products?category=Chemicals & Colors"
+    },
+    {
+      title: "RECYCLE PLASTIC SHEETS",
+      subtitle: "Sustainable & Durable Recycle Plastic Sheets",
+      description: "High-grade recycled plastic sheets offering outstanding durability, weather resistance, and utility for manufacturing palettes and setups.",
+      image: "/recycle plastic sheet banner.jpeg",
+      link: "/products"
     }
   ];
 
@@ -183,7 +190,22 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-white overflow-hidden border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
+             {/* Right Poster Column */}
+            <div className="relative group">
+              {/* Background decorative colored sheet */}
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              
+              {/* Image wrapper */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-100">
+                <img 
+                  src="/about page poster.png" 
+                  alt="SR Plastic About Us Poster" 
+                  className="w-full h-auto object-cover transition duration-700 ease-out group-hover:scale-105"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none transition duration-500 group-hover:from-primary/5" />
+              </div>
+            </div>
             {/* Left Content Column */}
             <div className="space-y-6">
               <div>
@@ -234,66 +256,21 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Poster Column */}
-            <div className="relative group">
-              {/* Background decorative colored sheet */}
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              
-              {/* Image wrapper */}
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-100">
-                <img 
-                  src="/about page poster.png" 
-                  alt="SR Plastic About Us Poster" 
-                  className="w-full h-auto object-cover transition duration-700 ease-out group-hover:scale-105"
-                  onError={(e) => { e.target.style.display = 'none'; }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none transition duration-500 group-hover:from-primary/5" />
-              </div>
-            </div>
+           
 
           </div>
         </div>
       </section>
 
-      {/* Feature Badges */}
-      <section className="bg-white border-y border-slate-200 py-10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex items-start space-x-4">
-            <div className="bg-primary/10 text-primary p-3 rounded-lg">
-              <Award size={24} />
+       {/* Stats Counter Section */}
+      <section className="bg-primary text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          {stats.map((stat, idx) => (
+            <div key={idx} className="space-y-1">
+              <p className="text-4xl md:text-5xl font-black text-secondary">{stat.value}</p>
+              <p className="text-xs md:text-sm text-slate-300 tracking-wider uppercase font-semibold">{stat.label}</p>
             </div>
-            <div>
-              <h3 className="font-bold text-slate-800 text-sm">ISO Certified Quality</h3>
-              <p className="text-xs text-slate-500 mt-1">Conforms to standard ISO 9001:2015 specifications.</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <div className="bg-primary/10 text-primary p-3 rounded-lg">
-              <ShieldCheck size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-slate-800 text-sm">High Load Endurance</h3>
-              <p className="text-xs text-slate-500 mt-1">Durable plastics engineered for heavy load release.</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <div className="bg-primary/10 text-primary p-3 rounded-lg">
-              <Zap size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-slate-800 text-sm">Quick Casting Output</h3>
-              <p className="text-xs text-slate-500 mt-1">Smooth finishes allow lightning-fast de-moulding.</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <div className="bg-primary/10 text-primary p-3 rounded-lg">
-              <Users size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-slate-800 text-sm">Domestic Support</h3>
-              <p className="text-xs text-slate-500 mt-1">Dedicated engineer helpline for factory setups.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -338,18 +315,49 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Stats Counter Section */}
-      <section className="bg-primary text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {stats.map((stat, idx) => (
-            <div key={idx} className="space-y-1">
-              <p className="text-4xl md:text-5xl font-black text-secondary">{stat.value}</p>
-              <p className="text-xs md:text-sm text-slate-300 tracking-wider uppercase font-semibold">{stat.label}</p>
+      {/* Feature Badges */}
+      <section className="bg-white border-y border-slate-200 py-10 shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex items-start space-x-4">
+            <div className="bg-primary/10 text-primary p-3 rounded-lg">
+              <Award size={24} />
             </div>
-          ))}
+            <div>
+              <h3 className="font-bold text-slate-800 text-sm">ISO Certified Quality</h3>
+              <p className="text-xs text-slate-500 mt-1">Conforms to standard ISO 9001:2015 specifications.</p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <div className="bg-primary/10 text-primary p-3 rounded-lg">
+              <ShieldCheck size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-sm">High Load Endurance</h3>
+              <p className="text-xs text-slate-500 mt-1">Durable plastics engineered for heavy load release.</p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <div className="bg-primary/10 text-primary p-3 rounded-lg">
+              <Zap size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-sm">Quick Casting Output</h3>
+              <p className="text-xs text-slate-500 mt-1">Smooth finishes allow lightning-fast de-moulding.</p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <div className="bg-primary/10 text-primary p-3 rounded-lg">
+              <Users size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-sm">Domestic Support</h3>
+              <p className="text-xs text-slate-500 mt-1">Dedicated engineer helpline for factory setups.</p>
+            </div>
+          </div>
         </div>
       </section>
+
+     
 
       {/* Testimonials */}
       <section className="py-20 bg-white">
