@@ -26,8 +26,14 @@ function getCategoryInfo(pageNum) {
   if (pageNum >= 86 && pageNum <= 91) {
     return { category: 'Machinery', subcategory: 'Production Machinery' };
   }
-  if (pageNum >= 92 && pageNum <= 95) {
-    return { category: 'Chemicals & Colors', subcategory: 'Additives & Polish' };
+  if (pageNum === 92) {
+    return { category: 'Color', subcategory: 'Colors' };
+  }
+  if (pageNum === 93 || pageNum === 95) {
+    return { category: 'Chemicals & Hardener', subcategory: 'Additives & Polish' };
+  }
+  if (pageNum === 94) {
+    return { category: 'Plastic Sheet', subcategory: 'Sheets' };
   }
   return { category: 'PVC Mould', subcategory: 'Other' };
 }

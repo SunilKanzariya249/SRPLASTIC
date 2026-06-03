@@ -23,7 +23,9 @@ export default function Products() {
     'Rubber Mould',
     'Cover Block',
     'Machinery',
-    'Chemicals & Colors'
+    'Color',
+    'Chemicals & Hardener',
+    'Plastic Sheet'
   ];
 
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function Products() {
       setLoading(true);
       try {
         const API_URL = import.meta.env.VITE_API_URL || '';
-        let url = `${API_URL}/api/products?category=${selectedCategory}`;
+        let url = `${API_URL}/api/products?category=${encodeURIComponent(selectedCategory)}`;
         if (searchTerm) {
           url += `&search=${searchTerm}`;
         }

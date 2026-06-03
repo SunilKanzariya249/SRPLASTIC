@@ -9,7 +9,7 @@ const productSchema = new mongoose.Schema({
   category: {
     type: String,
     required: true,
-    enum: ['PVC Mould', 'Rubber Mould', 'Cover Block', 'Machinery', 'Chemicals & Colors'],
+    enum: ['PVC Mould', 'Rubber Mould', 'Cover Block', 'Machinery', 'Color', 'Chemicals & Hardener', 'Plastic Sheet'],
     index: true
   },
   subcategory: {

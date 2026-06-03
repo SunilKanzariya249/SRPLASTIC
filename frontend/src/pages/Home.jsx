@@ -26,21 +26,21 @@ export default function Home() {
       subtitle: "Dual-Action Concrete Strength Enhancers",
       description: "Advanced superplasticizers and strengthening additives that boost concrete tensile strength and speed up demoulding cycles.",
       image: "/paver block chemicals hardner banner.png",
-      link: "/products?category=Chemicals & Colors"
+      link: "/products?category=Chemicals%20%26%20Hardener"
     },
     {
       title: "VIBRANT IRON OXIDE COLORS",
       subtitle: "Premium UV-Resistant Coloring Pigments",
       description: "UV-stable iron oxide pigments with high dispersing capability that maintain bright concrete luster for years.",
       image: "/iron oxide color banner.png",
-      link: "/products?category=Chemicals & Colors"
+      link: "/products?category=Color"
     },
     {
       title: "RECYCLE PLASTIC SHEETS",
       subtitle: "Sustainable & Durable Recycle Plastic Sheets",
       description: "High-grade recycled plastic sheets offering outstanding durability, weather resistance, and utility for manufacturing palettes and setups.",
       image: "/recycle plastic sheet banner.jpeg",
-      link: "/products"
+      link: "/products?category=Plastic Sheet"
     }
   ];
 
@@ -49,29 +49,43 @@ export default function Home() {
       name: "PVC Paver Moulds",
       count: "30+ Models",
       desc: "Prismatic molds like Colorado, Cosmic, Damru, and Hexagon for premium concrete blocks.",
-      image: "/product_images/p3_cosmic_paver.png",
+      image: "/paver block plastic mould card.png",
       query: "PVC Mould"
     },
     {
       name: "Rubber Moulds",
       count: "40+ Models",
       desc: "Flexible, long-life, tear-resistant rubber molds for heavy-duty paving tiles.",
-      image: "/product_images/p30_zigzag_a_rubber_mould.png",
+      image: "/paver block pvc rubber mould card.png",
       query: "Rubber Mould"
-    },
-    {
-      name: "Cover Blocks",
-      count: "10+ Sizes",
-      desc: "Round and square concrete spacer cover blocks from 20mm to 50mm.",
-      image: "/product_images/p78_cover_block_square_2025_mm_(36_kvt).png",
-      query: "Cover Block"
     },
     {
       name: "Machinery & Mixers",
       count: "6+ Machines",
       desc: "Vibratory table layouts, pan concrete mixers, and color layer mixers.",
-      image: "/product_images/p87_vibrator_table_machine_for_paver_block.png",
+      image: "/paver block machinery card.png",
       query: "Machinery"
+    },
+    {
+      name: "Chemicals & Hardeners",
+      count: "10+ Formulas",
+      desc: "High-grade superplasticizers and chemical formulations to speed up concrete curing.",
+      image: "/paver block chemicals hardner card.png",
+      query: "Chemicals & Hardener"
+    },
+    {
+      name: "Iron Oxide Colors",
+      count: "12+ Shades",
+      desc: "UV-stable premium coloring pigments for lasting concrete block luster.",
+      image: "/iron oxide color card.png",
+      query: "Color"
+    },
+    {
+      name: "Recycle Plastic Sheets",
+      count: "Eco-Friendly",
+      desc: "Sustainable, high-durability plastic sheets for industrial stack palettes.",
+      image: "/recycle plastic sheet card.png",
+      query: "Plastic Sheet"
     }
   ];
 
@@ -283,34 +297,20 @@ export default function Home() {
             <div className="w-16 h-1 bg-secondary mx-auto mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((cat, idx) => (
-              <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden card-glow flex flex-col border border-slate-200">
-                <div className="h-48 overflow-hidden bg-slate-100 flex items-center justify-center p-4">
-                  <img
-                    src={cat.image}
-                    alt={cat.name}
-                    className="max-h-full max-w-[90%] object-contain hover:scale-105 transition duration-300"
-                    onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
-                  />
-                </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="bg-slate-100 text-primary text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 uppercase">
-                      {cat.count}
-                    </span>
-                  </div>
-                  <h3 className="font-extrabold text-slate-800 text-base mb-2">{cat.name}</h3>
-                  <p className="text-slate-500 text-xs leading-relaxed flex-1 mb-6">{cat.desc}</p>
-                  <Link
-                    to={`/products?category=${cat.query}`}
-                    className="text-primary hover:text-secondary-dark text-xs font-bold flex items-center space-x-1.5 self-start group"
-                  >
-                    <span>View Products</span>
-                    <ArrowRight size={14} className="group-hover:translate-x-1 transition" />
-                  </Link>
-                </div>
-              </div>
+              <Link
+                key={idx}
+                to={`/products?category=${encodeURIComponent(cat.query)}`}
+                className="relative block rounded-2xl shadow-md hover:shadow-xl overflow-hidden border border-slate-200 group transition duration-300"
+              >
+                <img
+                  src={cat.image}
+                  alt={cat.name}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
+                />
+              </Link>
             ))}
           </div>
         </div>

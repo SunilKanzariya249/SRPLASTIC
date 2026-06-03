@@ -87,9 +87,21 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/products?category=Chemicals & Colors" className="flex items-center hover:text-white transition">
+              <Link to="/products?category=Color" className="flex items-center hover:text-white transition">
                 <ChevronRight size={14} className="text-secondary mr-1" />
-                <span>Oxides & Hardeners</span>
+                <span>Iron Oxide Colors</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/products?category=Chemicals & Hardener" className="flex items-center hover:text-white transition">
+                <ChevronRight size={14} className="text-secondary mr-1" />
+                <span>Chemicals & Hardeners</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/products?category=Plastic Sheet" className="flex items-center hover:text-white transition">
+                <ChevronRight size={14} className="text-secondary mr-1" />
+                <span>Recycle Plastic Sheets</span>
               </Link>
             </li>
           </ul>

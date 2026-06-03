@@ -980,7 +980,7 @@ export const staticProducts = [
   {
     "_id": "p92",
     "name": "Iron Oxide Pigment(colors) Iron Oxide Pigment Is Widley Used And Is The Largest",
-    "category": "Chemicals & Colors",
+    "category": "Color",
     "subcategory": "Additives & Polish",
     "pageNumber": 92,
     "imageName": "p92_iron_oxide_pigment(colors)_iron_oxide_pigment_is_w.png",
@@ -997,7 +997,7 @@ export const staticProducts = [
   {
     "_id": "p93",
     "name": "Hardner Chemical A Highly Effective Dual Action Liquid Super Plasticizer Forthe",
-    "category": "Chemicals & Colors",
+    "category": "Chemicals & Hardener",
     "subcategory": "Additives & Polish",
     "pageNumber": 93,
     "imageName": "p93_hardner_chemical_a_highly_effective_dual_action_li.png",
@@ -1007,7 +1007,7 @@ export const staticProducts = [
   {
     "_id": "p94",
     "name": "Plastic Sheet This Plastic Sheets Are Use In Making Of Fly Ash Bricks And",
-    "category": "Chemicals & Colors",
+    "category": "Plastic Sheet",
     "subcategory": "Additives & Polish",
     "pageNumber": 94,
     "imageName": "p94_plastic_sheet_this_plastic_sheets_are_use_in_makin.png",
@@ -1018,8 +1018,8 @@ export const staticProducts = [
   },
   {
     "_id": "p95",
-    "name": "Lacqure Polish",
-    "category": "Chemicals & Colors",
+    "name": "Laqure Polish",
+    "category": "Chemicals & Hardener",
     "subcategory": "Additives & Polish",
     "pageNumber": 95,
     "imageName": "p95_lacqure_polish.png",
