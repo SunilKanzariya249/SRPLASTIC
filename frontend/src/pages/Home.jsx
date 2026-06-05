@@ -12,35 +12,35 @@ export default function Home() {
       subtitle: "Precision Engineered Paver Block Moulds",
       description: "Manufactured using high-strength polymers that deliver pristine dimensional accuracy, smooth concrete surface finishes, and long lifecycle endurance.",
       image: "/paver block mould banner.png",
-      link: "/products?category=Paver-Block-Plastic-Mould"
+      link: "/products"
     },
     {
       title: "HEAVY-DUTY INDUSTRIAL MACHINERY",
       subtitle: "Vibrator Tables, Roller Pan Mixers & Mixers",
       description: "Engineered for harsh factory workloads, high capacities (up to 4000 units/shift), and minimal power consumption.",
       image: "/paver block machinery banner.png",
-      link: "/products?category=Paver-Block-Machinery"
+      link: "/category/Paver-Block-Machinery"
     },
     {
       title: "HIGH-QUALITY CHEMICALS & HARDENERS",
       subtitle: "Dual-Action Concrete Strength Enhancers",
       description: "Advanced superplasticizers and strengthening additives that boost concrete tensile strength and speed up demoulding cycles.",
       image: "/paver block chemicals hardner banner.png",
-      link: "/products?category=Paver-Block-Chemicals"
+      link: "/category/Paver-Block-Chemicals"
     },
     {
       title: "VIBRANT IRON OXIDE COLORS",
       subtitle: "Premium UV-Resistant Coloring Pigments",
       description: "UV-stable iron oxide pigments with high dispersing capability that maintain bright concrete luster for years.",
       image: "/iron oxide color banner.png",
-      link: "/products?category=Iron-Oxide-Color"
+      link: "/category/Iron-Oxide-Color"
     },
     {
       title: "RECYCLE PLASTIC SHEETS",
       subtitle: "Sustainable & Durable Recycle Plastic Sheets",
       description: "High-grade recycled plastic sheets offering outstanding durability, weather resistance, and utility for manufacturing palettes and setups.",
       image: "/recycle plastic sheet banner.jpeg",
-      link: "/products?category=Recycle-Plastic-Sheet"
+      link: "/category/Recycle-Plastic-Sheet"
     }
   ];
 
@@ -158,8 +158,9 @@ export default function Home() {
       {/* Hero Carousel */}
       <section className="relative w-full h-auto aspect-video md:aspect-auto md:h-[calc(100vh-76px)] bg-slate-900 overflow-hidden text-white">
         {slides.map((slide, idx) => (
-          <div
+          <Link
             key={idx}
+            to={slide.link}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out flex items-center ${
               idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
@@ -172,20 +173,20 @@ export default function Home() {
                 idx === currentSlide ? 'scale-100' : 'scale-105'
               }`}
             />
-          </div>
+          </Link>
         ))}
 
         {/* Slide Controls */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-black/20 hover:bg-black/40 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-black/20 hover:bg-black/40 p-1 md:p-2.5 rounded-full text-white transition focus:outline-none"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
@@ -211,7 +212,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
              {/* Right Poster Column */}
-            <div className="relative group">
+            <Link to="/products" className="relative group block">
               {/* Background decorative colored sheet */}
               <div className="absolute -inset-1.5 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               
@@ -225,7 +226,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none transition duration-500 group-hover:from-primary/5" />
               </div>
-            </div>
+            </Link>
             {/* Left Content Column */}
             <div className="space-y-6">
               <div>
