@@ -1,0 +1,352 @@
+{
+  "2": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "255 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm -146 Gms."
+  },
+  "3": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "188 Pcs./100Sq Ft.",
+    "Mould Weight": "60mm -170 Gms. 80mm -175 Gms."
+  },
+  "4": {
+    "Size": "260 mm x 175 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "243 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm- 140 Gms."
+  },
+  "5": {
+    "Size": "250 mm x 175 mm",
+    "Height": "60mm, 80mm,100mm",
+    "Req Mould": "300 Pcs. / 100 Sq.Ft.",
+    "Mould Weight": "60mm- 118 Gms. 80mm- 134 Gms."
+  },
+  "6": {
+    "Size": "200 mm x 170 mm",
+    "Height": "40mm, 60mm, 80mm,100mm",
+    "Req Mould": "324Pcs. /100 sq Ft.",
+    "Mould Weight": "40mm - 90 Gms. 60 mm 105 Gms 80mm - 120 Gms 100mm - 239 Gms"
+  },
+  "7": {
+    "Size": "280 mm x 100 mm",
+    "Height": "60mm",
+    "Req Mould": "200Pcs./100Sq.Ft.",
+    "Mould Weight": "A-60mm -190 Gms. B-60mm -160 Gms."
+  },
+  "8": {
+    "Size": "310 mm x 210 mm",
+    "Height": "60mm",
+    "Req Mould": "217 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm-154 Gms."
+  },
+  "9": {
+    "Size": "370 mm x 90 mm",
+    "Height": "60mm",
+    "Req Mould": "288 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm-146 Gms."
+  },
+  "10": {
+    "Size": "185 mm x 185 mm",
+    "Height": "60mm 80mm",
+    "Req Mould": "300Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm-116 Gms. 80mm-130 Gms. IO"
+  },
+  "11": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "225 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm-175 Gms."
+  },
+  "12": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mmt 80mm",
+    "Req Mould": "225 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm- 197 Gms. 80mm- 220 Gms."
+  },
+  "13": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "225 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm-182 Gms."
+  },
+  "14": {
+    "Size": "200 mm x 200 mm",
+    "Height": "60mm, 80mm",
+    "Req Mould": "225 Pcs./100Sq.Ft.",
+    "Mould Weight": "60mm- 197 Gms. 80mm- 220 Gms."
+  },
+  "15": {
+    "Size": "8 inc",
+    "Height": "60 mm",
+    "Req Mould": "405Pcs./100Sq.Ft.",
+    "Mould Weight": "87 Gms."
+  },
+  "16": {
+    "Size": "9 inc",
+    "Height": "3 inch",
+    "Req Mould": "360Pcs./100Sq.Ft.",
+    "Mould Weight": "117 Gms."
+  },
+  "17": {
+    "Size": "300 mm x 300 mm",
+    "Height": "100, 150 mm",
+    "Mould Weight": "100mm- 700 Gms. 150mm- 970 Gms"
+  },
+  "18": {
+    "Size": "450 mm x 300 mm",
+    "Height": "100, 150 mm",
+    "Mould Weight": "100mm - 1000 Gms. 150mm- 1.300 Gms."
+  },
+  "19": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "270 Gms."
+  },
+  "20": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "280 Gms."
+  },
+  "21": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "320 Gms."
+  },
+  "22": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "300 Gms."
+  },
+  "23": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "300 Gms."
+  },
+  "24": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "270 Gms."
+  },
+  "25": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "280 Gms."
+  },
+  "26": {
+    "Size": "200 mm x 200 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "290 Gms."
+  },
+  "27": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "320 Gms."
+  },
+  "28": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "300 Gms."
+  },
+  "29": {
+    "Size": "300 mm x 300 mm",
+    "Height": "25 mm",
+    "Req Mould": "96 Pcs./100Sq.Ft.",
+    "Mould Weight": "250 Gms."
+  },
+  "30": {
+    "Mould Weight": "60mm-1.520 Kg 80mm-1.910 Kg."
+  },
+  "31": {
+    "Mould Weight": "60mm-1.520 Kg 80mm-1.910 Kg."
+  },
+  "32": {
+    "Mould Weight": "60mm-1.720 Kg 80mm-2.120 Kg"
+  },
+  "33": {
+    "Mould Weight": "60mm-1.720 Kg 80mm-2.120 Kg"
+  },
+  "34": {
+    "Mould Weight": "60mm-1.610 Kg. 80mm-2.050 Kg"
+  },
+  "35": {
+    "Mould Weight": "60mm-1.350 Kg 80mm-1.680 Kg"
+  },
+  "36": {
+    "Mould Weight": "60mm-1.715 Kg. 80mm-2.150 Kg"
+  },
+  "37": {
+    "Mould Weight": "60mm-1.570 80mm-l.985 Kg"
+  },
+  "38": {
+    "Mould Weight": "60mm-1.570 80mm-l.985 Kg"
+  },
+  "39": {
+    "Mould Weight": "60mm-1.350 Kg 80mm-1.650 Kg"
+  },
+  "40": {
+    "Mould Weight": "60mm-1.350 Kg 80mm-l.650 Kg"
+  },
+  "41": {
+    "Mould Weight": "60mm-1.750 Kg 80mm-2.200Kg"
+  },
+  "42": {
+    "Mould Weight": "60mm-1.750 Kg. 80mm-2.200 Kg"
+  },
+  "43": {
+    "Mould Weight": "60mm-1.325 Kg 80mm-1.650 Kg"
+  },
+  "44": {
+    "Mould Weight": "60mm - 1.325 Kg 80mm-l.650 Kg"
+  },
+  "45": {
+    "Mould Weight": "60mm-1.750 Kg 80mm-2.210 Kg"
+  },
+  "46": {
+    "Mould Weight": "60mm-1.750 Kg 80mm-2.210 Kg"
+  },
+  "47": {
+    "Mould Weight": "60mm-1.525 Kg 80mm-1.910 Kg"
+  },
+  "48": {
+    "Mould Weight": "60mm-1.600 Kg"
+  },
+  "49": {
+    "Mould Weight": "60mm-1.910 Kg. 80mm-2.250 Kg"
+  },
+  "50": {
+    "Mould Weight": "60mm-1.910 Kg"
+  },
+  "51": {
+    "Mould Weight": "60mm-1.630 Kg"
+  },
+  "52": {
+    "Mould Weight": "60mm-1.725 Kg 80mm-2.170 Kg"
+  },
+  "53": {
+    "Mould Weight": "60mm-1.730 Kg 80mm-2.100 Kg"
+  },
+  "54": {
+    "Mould Weight": "60mm-1.450 Kg 80mm-1.750 Kg"
+  },
+  "55": {
+    "Mould Weight": "60mm-1.875 Kg. 80mm-2.330 Kg"
+  },
+  "56": {
+    "Mould Weight": "60mm-1.820 Kg 80mm-2.300 Kg"
+  },
+  "57": {
+    "Mould Weight": "60mm-2.350 Kg"
+  },
+  "58": {
+    "Mould Weight": "60mm-1.750 Kg 80mm-2.110 Kg."
+  },
+  "59": {
+    "Mould Weight": "60mm-1.900"
+  },
+  "60": {
+    "Mould Weight": "60mm-1.750 Kg 80mm-2.110 Kg."
+  },
+  "61": {
+    "Mould Weight": "60mm-1.900 80mm-2.250 Kg"
+  },
+  "62": {
+    "Mould Weight": "60mm-l.750"
+  },
+  "63": {
+    "Mould Weight": "60mm-1.950 Kg"
+  },
+  "64": {
+    "Mould Weight": "60mm-1.790 Kg"
+  },
+  "65": {
+    "Mould Weight": "60mm-2.000"
+  },
+  "66": {
+    "Mould Weight": "60mm-l.220"
+  },
+  "67": {
+    "Mould Weight": "60mm-1.570 Kg"
+  },
+  "68": {
+    "Mould Weight": "60mm-1.630 Kg"
+  },
+  "69": {
+    "Mould Weight": "60mm-1.950 80mm-2.460 Kg"
+  },
+  "70": {
+    "Mould Weight": "60mm-2.225 Kg 80mm-2.790 Kg"
+  },
+  "71": {
+    "Mould Weight": "60mm-2.080 Kg."
+  },
+  "72": {
+    "Mould Weight": "60mm-2.200 Kg."
+  },
+  "73": {
+    "Mould Weight": "60mm-2.000 Kg 80mm-2.530 Kg"
+  },
+  "74": {},
+  "75": {},
+  "76": {},
+  "77": {},
+  "78": {
+    "Spacer Size": "20 mm / 25 mm",
+    "Mould Capacity": "36 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "79": {
+    "Spacer Size": "20 mm / 25 mm / 30 mm",
+    "Mould Capacity": "64 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "80": {
+    "Spacer Size": "20 mm / 25 mm / 40 mm / 50 mm",
+    "Mould Capacity": "25 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "81": {
+    "Spacer Size": "20 mm",
+    "Mould Capacity": "39 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "82": {
+    "Spacer Size": "25 mm",
+    "Mould Capacity": "39 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "83": {
+    "Spacer Size": "30 mm",
+    "Mould Capacity": "39 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "84": {
+    "Spacer Size": "40 mm",
+    "Mould Capacity": "39 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  },
+  "85": {
+    "Spacer Size": "50 mm",
+    "Mould Capacity": "39 Cavity",
+    "Material": "Heavy-Duty Reinforced Polymer",
+    "Usage/Application": "Concrete Spacing spacer for Rebar"
+  }
+}

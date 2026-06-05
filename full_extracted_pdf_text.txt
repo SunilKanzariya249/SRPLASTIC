@@ -1,0 +1,541 @@
+
+## --- Page 1 ---
+PAVER
+PVC & RUBBER PRODUCT
+MOULD
+1
+## --- Page 2 ---
+COLORADO
+    
+PAVER
+2
+## --- Page 3 ---
+COSMIC
+ 
+PAVER
+3
+## --- Page 4 ---
+DAMRU
+ 
+PAVER
+4
+## --- Page 5 ---
+ZIGZAG
+ 
+PAVER
+5
+## --- Page 6 ---
+I
+-
+SHAPE
+ 
+PAVER
+-
+6
+## --- Page 7 ---
+BROOKS
+-
+A/B
+      
+PAVER
+BROOKS
+-
+A
+BROOKS
+-
+B
+7
+## --- Page 8 ---
+KAJUKATRI
+ 
+PAVER
+8
+## --- Page 9 ---
+3D
+-
+A
+ 
+PAVER
+9
+## --- Page 10 ---
+HEXAGON
+     
+PAVER
+10
+## --- Page 11 ---
+MASHROOM
+     
+PAVER
+11
+## --- Page 12 ---
+D
+-
+FOUR
+ 
+SQUARE
+12
+## --- Page 13 ---
+LETHAR
+-
+A
+   
+PAVER
+13
+## --- Page 14 ---
+COBAL
+   
+PAVER
+14
+## --- Page 15 ---
+LETHAR
+-
+A
+   
+PAVER
+15
+## --- Page 16 ---
+BRICK
+16
+## --- Page 17 ---
+CURB STONE 
+ROUND SHAPE
+17
+## --- Page 18 ---
+CURB STONE 
+ROUND SHAPE
+18
+## --- Page 19 ---
+DOUBLE
+ROUNDE
+19
+## --- Page 20 ---
+100
+SQUARE
+20
+## --- Page 21 ---
+PLAIN 
+  
+TILE
+21
+## --- Page 22 ---
+RANGOLI 
+    
+TILE
+22
+## --- Page 23 ---
+RANGOLI 
+    
+TILE
+23
+## --- Page 24 ---
+CAMERA
+    
+TILE
+24
+## --- Page 25 ---
+36
+-
+COIN
+    
+TILE
+25
+## --- Page 26 ---
+WAVE
+    
+TILE
+26
+## --- Page 27 ---
+CAPSULE
+      
+TILE
+27
+## --- Page 28 ---
+SQUARE
+ACCUPRESSURE
+28
+## --- Page 29 ---
+SWASTIK
+    
+TILE
+29
+## --- Page 30 ---
+ZIGZAG
+-
+A
+RUBBER MOULD
+30
+## --- Page 31 ---
+ZIGZAG
+-
+B
+RUBBER MOULD
+31
+## --- Page 32 ---
+COSMIC
+-
+A
+RUBBER MOULD
+32
+## --- Page 33 ---
+COSMIC
+-
+B
+RUBBER MOULD
+33
+## --- Page 34 ---
+I SHAPE
+-
+A(BIG)
+34
+## --- Page 35 ---
+I SHAPE
+-
+A(SMALL)
+35
+## --- Page 36 ---
+COLORADO
+-
+A
+36
+## --- Page 37 ---
+DAMRU
+-
+A
+37
+## --- Page 38 ---
+DAMRU
+-
+B
+38
+## --- Page 39 ---
+HEXAGON
+-
+A
+39
+## --- Page 40 ---
+HEXAGON
+-
+B
+40
+## --- Page 41 ---
+CAMEL HUMP
+-
+A
+41
+## --- Page 42 ---
+CAMEL HUMP
+-
+B
+42
+## --- Page 43 ---
+TRI HEX
+-
+A
+43
+## --- Page 44 ---
+TRI HEX
+-
+B
+44
+## --- Page 45 ---
+3D
+-
+A 
+RUBBER MOULD
+45
+## --- Page 46 ---
+3D
+-
+B 
+RUBBER MOULD
+46
+## --- Page 47 ---
+KAJUKATRI
+-
+A
+47
+## --- Page 48 ---
+HALF HEXA
+-
+A
+48
+## --- Page 49 ---
+BROOKS
+-
+A(BIG)
+49
+## --- Page 50 ---
+BROOKS
+-
+B(BIG)
+50
+## --- Page 51 ---
+BROOKS
+-
+A(SMALL)
+51
+## --- Page 52 ---
+BROOKS
+-
+B(SMALL)
+52
+## --- Page 53 ---
+STAR
+-
+A
+53
+## --- Page 54 ---
+CELL
+-
+A
+54
+## --- Page 55 ---
+JOHNSON
+-
+A
+55
+## --- Page 56 ---
+FLOWER
+-
+A
+56
+## --- Page 57 ---
+GRASS PAVER
+57
+## --- Page 58 ---
+LETHER 8 X 8
+58
+## --- Page 59 ---
+LETHER 4 X 8
+59
+## --- Page 60 ---
+ANTISKID 8 X 8
+60
+## --- Page 61 ---
+ANTISKID 4 X 8
+61
+## --- Page 62 ---
+STONE FACE 8 X 8
+62
+## --- Page 63 ---
+STONE FACE 4 X 8
+63
+## --- Page 64 ---
+FOUR SQUARE 8 X 8
+64
+## --- Page 65 ---
+FOUR SQUARE 4 X 8
+65
+## --- Page 66 ---
+FOUR SQUARE 4 X 4
+66
+## --- Page 67 ---
+MARBLE 10 X 5
+67
+## --- Page 68 ---
+MARBLE 5 X 5
+68
+## --- Page 69 ---
+STONE FACE 6 X 12
+69
+## --- Page 70 ---
+STONE FACE 6 X 6
+70
+## --- Page 71 ---
+STONE TYPE 6 X 12
+-
+B
+71
+## --- Page 72 ---
+STONE TYPE 6 X 6
+-
+B
+72
+## --- Page 73 ---
+MASHROOM 8 X 10
+73
+## --- Page 74 ---
+10 X 10 RUBBER
+       
+MOULD
+74
+## --- Page 75 ---
+6 X 6 WALL
+ 
+CLLADING
+75
+## --- Page 76 ---
+3 X 9 WALL
+ 
+CLLADING
+76
+## --- Page 77 ---
+6 X 6 WALL
+ 
+CLLADING
+77
+## --- Page 78 ---
+COVER BLOCK
+      
+SQUARE
+20.25 MM (36-KVT)
+78
+## --- Page 79 ---
+COVER BLOCK
+      
+SQUARE
+20.25.30 MM (64-KVT)
+79
+## --- Page 80 ---
+COVER BLOCK
+      
+SQUARE
+20.25.40.50 MM (25-KVT)
+80
+## --- Page 81 ---
+COVER BLOCK
+      
+ROUND
+20 MM (39-KVT)
+81
+## --- Page 82 ---
+COVER BLOCK
+      
+ROUND
+25 MM (39-KVT)
+82
+## --- Page 83 ---
+COVER BLOCK
+      
+ROUND
+30 MM (39-KVT)
+83
+## --- Page 84 ---
+COVER BLOCK
+      
+ROUND
+40 MM (39-KVT)
+84
+## --- Page 85 ---
+COVER BLOCK
+      
+ROUND
+50 MM (39-KVT)
+85
+## --- Page 86 ---
+Machinery Details
+86
+List Of Machinery Require For Manufactureing
+  Paver Block ,Curb Stone , Covering Block & 
+  Other Cementitems Areas Follow:
+1.Vibratory Table (2 Nos.)
+2.Concrete Mixer (1 Nos.)
+3.Color Mixer (1 Nos.)
+4.M.S. FabricatedTable(2 Nos.)
+5.Color & Hardner 
+6.Recycling Ply
+7.PVC Rubber Mould
+-Plan LayOut :
+Table 1
+Ms Table Table 2
+Color Mixer
+Concrete 
+Mixer
+-Plan Layout:
+## --- Page 87 ---
+Vibrator Table Machine 
+        
+for Paver Block
+87
+Capacity 3500 To 4000 / Shift
+Vibration 0.75-1
+Power Require 2 H.P. (3 Phase)
+Weight(approx.) 450 Kg.
+Surface Smooth
+Plate Thickness 8/10 mm
+Table Size 10*3 / 9*2.5 feet
+## --- Page 88 ---
+Roller Pan Mixer
+88
+Power require 7.5 HP   
+Diamiter 5 Ft.
+Oil Requirement for 16 Ltr to 20 Ltr (90 
+no Gear Oil)
+Storage Capacity 450 Kg.
+Mixing By Heavy Rollers and Blade for fly 
+ash bricks
+Usage Mixing of raw material for fly ash 
+bricks
+Gear Types Powerful worm Reduction gear box 
+transection unite crown pinion 
+(25/1.30/1)
+## --- Page 89 ---
+Pan Mixer Machine for
+Cement ,Sand & Concrete
+89
+Power require 7.5 HP   
+Diamiter 5 Ft.
+Oil Requirement for 16 Ltr to 20 Ltr (90 
+no Gear Oil)
+Storage Capacity 450 Kg.
+Mixing By Heavy Rollers and Blade for fly 
+ash bricks
+Usage Mixing of raw material for fly ash 
+bricks
+Gear Types Powerful worm Reduction gear box 
+transection unite crown pinion 
+(25/1.30/1)
+## --- Page 90 ---
+Color Mixer Machine for Top Color
+                  
+Layer of Paver Blocks
+90
+Electric Motar 2 H.P.
+Capacity 150 Kg.
+Phase type 3 Phase
+Voltage (V) 240 V
+Bottom Plate size 8 mm
+Speciality Smooth function & long 
+lasting
+## --- Page 91 ---
+Concrete Mixer
+91
+Power Source 1 Diesel engine
+Power Source 2 Motar 3 H.P.
+Type of Drum Tilting Drum Mixer
+Material Cast Iron
+Capacity Half Bag / Full Bag
+Portable Yes (on order)
+
+## --- Page 92 ---
+Iron Oxide Pigment(colors)
+92
+IRON OXIDE PIGMENT IS WIDLEY USED AND IS THE LARGEST 
+COLORED INORGANIC PIGMENT IN PRODUCTION AND 
+CONSUMPATION , IN THECONSCTRUCTION INDUSTRIES IT CAN 
+BE USED A SA COLORENT FOR AVARIETY OF PRECAST CONCRATE 
+AND BUILDING MATERIALS, SUCH AS PAVER BLOCK, WALL 
+DECORATION, ASPHALT ROAD, COLOR TILE,CONCRATE BRICK 
+AND BLOCK AND SO ON.
+     IRON OXIDE PIGMENTS CAN ALSO BE WIDLY USED IN 
+RUBBER, PLASTICS,CERAMICS, COSMETICS, PHARMACEUTICALS, 
+PAPER, LEATHER AND OTHERINDUSTRIES.
+## --- Page 93 ---
+HARDNER CHEMICAL
+93
+A HIGHLY EFFECTIVE DUAL ACTION LIQUID SUPER PLASTICIZER FORTHE 
+PRODUCTION OF FREE FLOWING CONCRATE IN HOT WATEROR AS A 
+SUBSTANTIAL WATER REDUCING AGENT FOR PROMOTINGHIGH ULTIMATE 
+STRENGTHS,
+BRIGHT HARDNER CAN BE USE IN FOLLOWING AREAS, PAVER BLOCK, 
+WALL TILES,FLOOR TILES, BRICK WORKS ETC.
+## --- Page 94 ---
+PLASTIC SHEET
+94
+THIS PLASTIC SHEETS ARE USE IN MAKING OF FLY ASH BRICKS AND 
+STACKING OF ALL KIND OF CONCRATE PRODUCTS PVC RUBBERMOULD.
+SHEET SIZE                                        8 FEET X 4 FEET.
+THICKNESS                                        8MM, 12MM, 18MM, 24MM.
+## --- Page 95 ---
+LACQURE POLISH
+95

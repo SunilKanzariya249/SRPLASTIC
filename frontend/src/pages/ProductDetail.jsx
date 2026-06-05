@@ -161,11 +161,11 @@ Message: ${formData.message}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Side: Zoomable Product Rendering Card */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex items-center justify-center h-[340px] md:h-[450px] overflow-hidden sticky top-28">
+        <div className="md:bg-white md:border md:border-slate-200 md:rounded-2xl md:p-2 md:shadow-sm flex items-center justify-center  md:h-[450px] overflow-hidden lg:sticky lg:top-28">
           <img
             src={`/product_images/${product.imageName}`}
             alt={product.name}
-            className="max-h-full max-w-[90%] object-contain"
+            className="max-h-full max-w-full object-contain"
             onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
           />
         </div>

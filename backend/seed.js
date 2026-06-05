@@ -4,13 +4,13 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const Product = require('./models/Product');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '.env') });
 
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/srplastic';
 
 // Heuristics for categories
 function getCategoryInfo(pageNum) {
-  if (pageNum === 1) return null; // Intro page
+  if (pageNum === 1 || pageNum === 86) return null; // Intro page or machinery list (not a product)
   if (pageNum >= 2 && pageNum <= 29) {
     return { category: 'PVC Mould', subcategory: pageNum >= 21 ? 'Tiles' : 'Paver Moulds' };
   }
@@ -127,26 +127,81 @@ async function seed() {
       const name = cleanTitle(titleLines.join('\n'));
 
       // Parse specifications into key-value pairs
-      const specifications = {};
-      for (let i = 0; i < specLines.length; i++) {
-        const line = specLines[i];
-        const lowerLine = line.toLowerCase();
+      let specifications = {};
+      
+      // Load from clean_parsed_specs.json if within page 2 to 85
+      if (pageNum >= 2 && pageNum <= 85) {
+        try {
+          const ocrSpecsPath = path.join(__dirname, '../clean_parsed_specs.json');
+          if (fs.existsSync(ocrSpecsPath)) {
+            const ocrData = JSON.parse(fs.readFileSync(ocrSpecsPath, 'utf8'));
+            if (ocrData[pageNum]) {
+              specifications = ocrData[pageNum];
+            }
+          }
+        } catch (err) {
+          console.warn(`Warning loading OCR specs for page ${pageNum}:`, err);
+        }
         
-        // Find if this line has a keyword
-        const matchingKey = specKeywords.find(keyword => lowerLine.startsWith(keyword));
-        if (matchingKey && i + 1 < specLines.length) {
-          const val = specLines[i + 1];
-          // Simple formatting of the key
-          const formattedKey = matchingKey.replace(/\b\w/g, char => char.toUpperCase());
-          specifications[formattedKey] = val;
-          i++; // Skip the next line as it's the value
-        } else if (line.includes(':')) {
-          const parts = line.split(':');
-          specifications[parts[0].trim()] = parts[1].trim();
-        } else {
-          // If it doesn't match clean pairs, just add general details if we can
-          if (line.length > 3 && !/^\d+$/.test(line)) {
-            specifications[`Detail ${i}`] = line;
+        // Manual overrides for pages 74-77
+        const manualSpecs = {
+          74: {"Size": "10 inch x 10 inch", "Material": "Heavy-Duty Polyurethane Rubber", "Usage/Application": "Casting Designer Wall Tiles"},
+          75: {"Size": "6 inch x 6 inch", "Material": "High-Impact PVC Polymer", "Usage/Application": "Exterior Wall Cladding Casting"},
+          76: {"Size": "3 inch x 9 inch", "Material": "High-Impact PVC Polymer", "Usage/Application": "Exterior Wall Cladding Casting"},
+          77: {"Size": "6 inch x 6 inch", "Material": "High-Impact PVC Polymer", "Usage/Application": "Exterior Wall Cladding Casting"}
+        };
+        if (manualSpecs[pageNum]) {
+          specifications = manualSpecs[pageNum];
+        }
+      }
+
+      // Manual overrides for Roller Pan Mixer (p88, p89)
+      if (pageNum === 88 || pageNum === 89) {
+        specifications = {
+          "Power require": "7.5 HP",
+          "Diameter": "5 Ft.",
+          "Oil": "Requirement for 16 Ltr to 20 Ltr (90 no Gear Oil)",
+          "Storage Capacity": "450 Kg.",
+          "Mixing": "By Heavy Rollers and Blade for fly ash bricks",
+          "Usage": "Mixing of raw material for fly ash bricks",
+          "Gear Types": "Powerful worm Reduction gear box transection unite crown pinion (25/1.30/1)"
+        };
+      }
+
+      // Manual override for Concrete Mixer (p91)
+      if (pageNum === 91) {
+        specifications = {
+          "Power Source 1": "Diesel engine",
+          "Power Source 2": "Motar 3 H.P.",
+          "Type of Drum": "Tilting Drum Mixer",
+          "Material": "Cast Iron",
+          "Capacity": "Half Bag / Full Bag",
+          "Portable": "Yes (on order)"
+        };
+      }
+
+      if (Object.keys(specifications).length === 0) {
+        // Fallback to text parsing for other pages (machinery, colors, chemicals, sheets)
+        for (let i = 0; i < specLines.length; i++) {
+          const line = specLines[i];
+          const lowerLine = line.toLowerCase();
+          
+          // Find if this line has a keyword
+          const matchingKey = specKeywords.find(keyword => lowerLine.startsWith(keyword));
+          if (matchingKey && i + 1 < specLines.length) {
+            const val = specLines[i + 1];
+            // Simple formatting of the key
+            const formattedKey = matchingKey.replace(/\b\w/g, char => char.toUpperCase());
+            specifications[formattedKey] = val;
+            i++; // Skip the next line as it's the value
+          } else if (line.includes(':')) {
+            const parts = line.split(':');
+            specifications[parts[0].trim()] = parts[1].trim();
+          } else {
+            // If it doesn't match clean pairs, just add general details if we can
+            if (line.length > 3 && !/^\d+$/.test(line)) {
+              specifications[`Detail ${i}`] = line;
+            }
           }
         }
       }

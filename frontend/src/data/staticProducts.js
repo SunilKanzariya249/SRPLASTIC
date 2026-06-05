@@ -6,7 +6,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 2,
     "imageName": "p2_colorado_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "255 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm -146 Gms."
+    },
     "description": "Premium quality Colorado Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -16,7 +21,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 3,
     "imageName": "p3_cosmic_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "188 Pcs./100Sq Ft.",
+      "Mould Weight": "60mm -170 Gms. 80mm -175 Gms."
+    },
     "description": "Premium quality Cosmic Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -26,7 +36,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 4,
     "imageName": "p4_damru_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "260 mm x 175 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "243 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm- 140 Gms."
+    },
     "description": "Premium quality Damru Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -36,7 +51,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 5,
     "imageName": "p5_zigzag_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "250 mm x 175 mm",
+      "Height": "60mm, 80mm,100mm",
+      "Req Mould": "300 Pcs. / 100 Sq.Ft.",
+      "Mould Weight": "60mm- 118 Gms. 80mm- 134 Gms."
+    },
     "description": "Premium quality Zigzag Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -46,7 +66,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 6,
     "imageName": "p6_i_shape_paver_.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 170 mm",
+      "Height": "40mm, 60mm, 80mm,100mm",
+      "Req Mould": "324Pcs. /100 sq Ft.",
+      "Mould Weight": "40mm - 90 Gms. 60 mm 105 Gms 80mm - 120 Gms 100mm - 239 Gms"
+    },
     "description": "Premium quality I-shape Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -56,7 +81,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 7,
     "imageName": "p7_brooks_ab_paver_brooks_a.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "280 mm x 100 mm",
+      "Height": "60mm",
+      "Req Mould": "200Pcs./100Sq.Ft.",
+      "Mould Weight": "A-60mm -190 Gms. B-60mm -160 Gms."
+    },
     "description": "Premium quality Brooks-ab Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -66,7 +96,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 8,
     "imageName": "p8_kajukatri_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "310 mm x 210 mm",
+      "Height": "60mm",
+      "Req Mould": "217 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm-154 Gms."
+    },
     "description": "Premium quality Kajukatri Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -76,7 +111,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 9,
     "imageName": "p9_3d_a_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "370 mm x 90 mm",
+      "Height": "60mm",
+      "Req Mould": "288 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm-146 Gms."
+    },
     "description": "Premium quality 3d-a Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -86,7 +126,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 10,
     "imageName": "p10_hexagon_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "185 mm x 185 mm",
+      "Height": "60mm 80mm",
+      "Req Mould": "300Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm-116 Gms. 80mm-130 Gms. IO"
+    },
     "description": "Premium quality Hexagon Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -96,7 +141,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 11,
     "imageName": "p11_mashroom_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "225 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm-175 Gms."
+    },
     "description": "Premium quality Mashroom Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -106,7 +156,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 12,
     "imageName": "p12_d_four_square.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mmt 80mm",
+      "Req Mould": "225 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm- 197 Gms. 80mm- 220 Gms."
+    },
     "description": "Premium quality D-four Square designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -116,7 +171,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 13,
     "imageName": "p13_lethar_a_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "225 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm-182 Gms."
+    },
     "description": "Premium quality Lethar-a Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -126,7 +186,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 14,
     "imageName": "p14_cobal_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "60mm, 80mm",
+      "Req Mould": "225 Pcs./100Sq.Ft.",
+      "Mould Weight": "60mm- 197 Gms. 80mm- 220 Gms."
+    },
     "description": "Premium quality Cobal Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -136,7 +201,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 15,
     "imageName": "p15_lethar_a_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "8 inc",
+      "Height": "60 mm",
+      "Req Mould": "405Pcs./100Sq.Ft.",
+      "Mould Weight": "87 Gms."
+    },
     "description": "Premium quality Lethar-a Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -146,7 +216,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 16,
     "imageName": "p16_brick.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "9 inc",
+      "Height": "3 inch",
+      "Req Mould": "360Pcs./100Sq.Ft.",
+      "Mould Weight": "117 Gms."
+    },
     "description": "Premium quality Brick designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -156,7 +231,11 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 17,
     "imageName": "p17_curb_stone_round_shape.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "100, 150 mm",
+      "Mould Weight": "100mm- 700 Gms. 150mm- 970 Gms"
+    },
     "description": "Premium quality Curb Stone Round Shape designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -166,7 +245,11 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 18,
     "imageName": "p18_curb_stone_round_shape.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "450 mm x 300 mm",
+      "Height": "100, 150 mm",
+      "Mould Weight": "100mm - 1000 Gms. 150mm- 1.300 Gms."
+    },
     "description": "Premium quality Curb Stone Round Shape designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -176,7 +259,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 19,
     "imageName": "p19_double_rounde.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "270 Gms."
+    },
     "description": "Premium quality Double Rounde designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -186,7 +274,12 @@ export const staticProducts = [
     "subcategory": "Paver Moulds",
     "pageNumber": 20,
     "imageName": "p20_square.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "280 Gms."
+    },
     "description": "Premium quality Square designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -196,7 +289,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 21,
     "imageName": "p21_plain_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "320 Gms."
+    },
     "description": "Premium quality Plain Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -206,7 +304,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 22,
     "imageName": "p22_rangoli_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "300 Gms."
+    },
     "description": "Premium quality Rangoli Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -216,7 +319,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 23,
     "imageName": "p23_rangoli_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "300 Gms."
+    },
     "description": "Premium quality Rangoli Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -226,7 +334,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 24,
     "imageName": "p24_camera_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "270 Gms."
+    },
     "description": "Premium quality Camera Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -236,7 +349,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 25,
     "imageName": "p25_36_coin_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "280 Gms."
+    },
     "description": "Premium quality 36-coin Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -246,7 +364,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 26,
     "imageName": "p26_wave_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "200 mm x 200 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "290 Gms."
+    },
     "description": "Premium quality Wave Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -256,7 +379,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 27,
     "imageName": "p27_capsule_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "320 Gms."
+    },
     "description": "Premium quality Capsule Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -266,7 +394,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 28,
     "imageName": "p28_square_accupressure.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "300 Gms."
+    },
     "description": "Premium quality Square Accupressure designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -276,7 +409,12 @@ export const staticProducts = [
     "subcategory": "Tiles",
     "pageNumber": 29,
     "imageName": "p29_swastik_tile.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "300 mm x 300 mm",
+      "Height": "25 mm",
+      "Req Mould": "96 Pcs./100Sq.Ft.",
+      "Mould Weight": "250 Gms."
+    },
     "description": "Premium quality Swastik Tile designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -286,7 +424,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 30,
     "imageName": "p30_zigzag_a_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.520 Kg 80mm-1.910 Kg."
+    },
     "description": "Premium quality Zigzag-a Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -296,7 +436,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 31,
     "imageName": "p31_zigzag_b_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.520 Kg 80mm-1.910 Kg."
+    },
     "description": "Premium quality Zigzag-b Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -306,7 +448,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 32,
     "imageName": "p32_cosmic_a_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.720 Kg 80mm-2.120 Kg"
+    },
     "description": "Premium quality Cosmic-a Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -316,7 +460,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 33,
     "imageName": "p33_cosmic_b_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.720 Kg 80mm-2.120 Kg"
+    },
     "description": "Premium quality Cosmic-b Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -326,7 +472,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 34,
     "imageName": "p34_i_shape_a(big).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.610 Kg. 80mm-2.050 Kg"
+    },
     "description": "Premium quality I Shape-a(big) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -336,7 +484,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 35,
     "imageName": "p35_i_shape_a(small).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.350 Kg 80mm-1.680 Kg"
+    },
     "description": "Premium quality I Shape-a(small) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -346,7 +496,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 36,
     "imageName": "p36_colorado_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.715 Kg. 80mm-2.150 Kg"
+    },
     "description": "Premium quality Colorado-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -356,7 +508,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 37,
     "imageName": "p37_damru_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.570 80mm-l.985 Kg"
+    },
     "description": "Premium quality Damru-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -366,7 +520,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 38,
     "imageName": "p38_damru_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.570 80mm-l.985 Kg"
+    },
     "description": "Premium quality Damru-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -376,7 +532,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 39,
     "imageName": "p39_hexagon_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.350 Kg 80mm-1.650 Kg"
+    },
     "description": "Premium quality Hexagon-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -386,7 +544,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 40,
     "imageName": "p40_hexagon_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.350 Kg 80mm-l.650 Kg"
+    },
     "description": "Premium quality Hexagon-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -396,7 +556,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 41,
     "imageName": "p41_camel_hump_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg 80mm-2.200Kg"
+    },
     "description": "Premium quality Camel Hump-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -406,7 +568,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 42,
     "imageName": "p42_camel_hump_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg. 80mm-2.200 Kg"
+    },
     "description": "Premium quality Camel Hump-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -416,7 +580,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 43,
     "imageName": "p43_tri_hex_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.325 Kg 80mm-1.650 Kg"
+    },
     "description": "Premium quality Tri Hex-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -426,7 +592,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 44,
     "imageName": "p44_tri_hex_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm - 1.325 Kg 80mm-l.650 Kg"
+    },
     "description": "Premium quality Tri Hex-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -436,7 +604,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 45,
     "imageName": "p45_3d_a_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg 80mm-2.210 Kg"
+    },
     "description": "Premium quality 3d-a Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -446,7 +616,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 46,
     "imageName": "p46_3d_b_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg 80mm-2.210 Kg"
+    },
     "description": "Premium quality 3d-b Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -456,7 +628,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 47,
     "imageName": "p47_kajukatri_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.525 Kg 80mm-1.910 Kg"
+    },
     "description": "Premium quality Kajukatri-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -466,7 +640,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 48,
     "imageName": "p48_half_hexa_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.600 Kg"
+    },
     "description": "Premium quality Half Hexa-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -476,7 +652,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 49,
     "imageName": "p49_brooks_a(big).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.910 Kg. 80mm-2.250 Kg"
+    },
     "description": "Premium quality Brooks-a(big) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -486,7 +664,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 50,
     "imageName": "p50_brooks_b(big).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.910 Kg"
+    },
     "description": "Premium quality Brooks-b(big) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -496,7 +676,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 51,
     "imageName": "p51_brooks_a(small).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.630 Kg"
+    },
     "description": "Premium quality Brooks-a(small) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -506,7 +688,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 52,
     "imageName": "p52_brooks_b(small).png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.725 Kg 80mm-2.170 Kg"
+    },
     "description": "Premium quality Brooks-b(small) designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -516,7 +700,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 53,
     "imageName": "p53_star_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.730 Kg 80mm-2.100 Kg"
+    },
     "description": "Premium quality Star-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -526,7 +712,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 54,
     "imageName": "p54_cell_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.450 Kg 80mm-1.750 Kg"
+    },
     "description": "Premium quality Cell-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -536,7 +724,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 55,
     "imageName": "p55_johnson_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.875 Kg. 80mm-2.330 Kg"
+    },
     "description": "Premium quality Johnson-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -546,7 +736,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 56,
     "imageName": "p56_flower_a.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.820 Kg 80mm-2.300 Kg"
+    },
     "description": "Premium quality Flower-a designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -556,7 +748,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 57,
     "imageName": "p57_grass_paver.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.350 Kg"
+    },
     "description": "Premium quality Grass Paver designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -566,7 +760,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 58,
     "imageName": "p58_lether_8_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg 80mm-2.110 Kg."
+    },
     "description": "Premium quality Lether 8 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -576,7 +772,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 59,
     "imageName": "p59_lether_4_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.900"
+    },
     "description": "Premium quality Lether 4 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -586,7 +784,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 60,
     "imageName": "p60_antiskid_8_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.750 Kg 80mm-2.110 Kg."
+    },
     "description": "Premium quality Antiskid 8 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -596,7 +796,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 61,
     "imageName": "p61_antiskid_4_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.900 80mm-2.250 Kg"
+    },
     "description": "Premium quality Antiskid 4 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -606,7 +808,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 62,
     "imageName": "p62_stone_face_8_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-l.750"
+    },
     "description": "Premium quality Stone Face 8 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -616,7 +820,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 63,
     "imageName": "p63_stone_face_4_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.950 Kg"
+    },
     "description": "Premium quality Stone Face 4 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -626,7 +832,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 64,
     "imageName": "p64_four_square_8_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.790 Kg"
+    },
     "description": "Premium quality Four Square 8 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -636,7 +844,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 65,
     "imageName": "p65_four_square_4_x_8.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.000"
+    },
     "description": "Premium quality Four Square 4 X 8 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -646,7 +856,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 66,
     "imageName": "p66_four_square_4_x_4.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-l.220"
+    },
     "description": "Premium quality Four Square 4 X 4 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -656,7 +868,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 67,
     "imageName": "p67_marble_10_x_5.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.570 Kg"
+    },
     "description": "Premium quality Marble 10 X 5 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -666,7 +880,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 68,
     "imageName": "p68_marble_5_x_5.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.630 Kg"
+    },
     "description": "Premium quality Marble 5 X 5 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -676,7 +892,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 69,
     "imageName": "p69_stone_face_6_x_12.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-1.950 80mm-2.460 Kg"
+    },
     "description": "Premium quality Stone Face 6 X 12 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -686,7 +904,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 70,
     "imageName": "p70_stone_face_6_x_6.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.225 Kg 80mm-2.790 Kg"
+    },
     "description": "Premium quality Stone Face 6 X 6 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -696,7 +916,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 71,
     "imageName": "p71_stone_type_6_x_12_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.080 Kg."
+    },
     "description": "Premium quality Stone Type 6 X 12-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -706,7 +928,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 72,
     "imageName": "p72_stone_type_6_x_6_b.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.200 Kg."
+    },
     "description": "Premium quality Stone Type 6 X 6-b designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -716,7 +940,9 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 73,
     "imageName": "p73_mashroom_8_x_10.png",
-    "specifications": {},
+    "specifications": {
+      "Mould Weight": "60mm-2.000 Kg 80mm-2.530 Kg"
+    },
     "description": "Premium quality Mashroom 8 X 10 designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -726,7 +952,11 @@ export const staticProducts = [
     "subcategory": "Rubber Moulds",
     "pageNumber": 74,
     "imageName": "p74_10_x_10_rubber_mould.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "10 inch x 10 inch",
+      "Material": "Heavy-Duty Polyurethane Rubber",
+      "Usage/Application": "Casting Designer Wall Tiles"
+    },
     "description": "Premium quality 10 X 10 Rubber Mould designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -736,7 +966,11 @@ export const staticProducts = [
     "subcategory": "Wall Claddings",
     "pageNumber": 75,
     "imageName": "p75_6_x_6_wall_cllading.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "6 inch x 6 inch",
+      "Material": "High-Impact PVC Polymer",
+      "Usage/Application": "Exterior Wall Cladding Casting"
+    },
     "description": "Premium quality 6 X 6 Wall Cllading designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -746,7 +980,11 @@ export const staticProducts = [
     "subcategory": "Wall Claddings",
     "pageNumber": 76,
     "imageName": "p76_3_x_9_wall_cllading.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "3 inch x 9 inch",
+      "Material": "High-Impact PVC Polymer",
+      "Usage/Application": "Exterior Wall Cladding Casting"
+    },
     "description": "Premium quality 3 X 9 Wall Cllading designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -756,7 +994,11 @@ export const staticProducts = [
     "subcategory": "Wall Claddings",
     "pageNumber": 77,
     "imageName": "p77_6_x_6_wall_cllading.png",
-    "specifications": {},
+    "specifications": {
+      "Size": "6 inch x 6 inch",
+      "Material": "High-Impact PVC Polymer",
+      "Usage/Application": "Exterior Wall Cladding Casting"
+    },
     "description": "Premium quality 6 X 6 Wall Cllading designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -766,7 +1008,12 @@ export const staticProducts = [
     "subcategory": "Square Cover Blocks",
     "pageNumber": 78,
     "imageName": "p78_cover_block_square_2025_mm_(36_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "20 mm / 25 mm",
+      "Mould Capacity": "36 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Square designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -776,7 +1023,12 @@ export const staticProducts = [
     "subcategory": "Square Cover Blocks",
     "pageNumber": 79,
     "imageName": "p79_cover_block_square_202530_mm_(64_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "20 mm / 25 mm / 30 mm",
+      "Mould Capacity": "64 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Square designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -786,7 +1038,12 @@ export const staticProducts = [
     "subcategory": "Square Cover Blocks",
     "pageNumber": 80,
     "imageName": "p80_cover_block_square_20254050_mm_(25_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "20 mm / 25 mm / 40 mm / 50 mm",
+      "Mould Capacity": "25 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Square designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -796,7 +1053,12 @@ export const staticProducts = [
     "subcategory": "Round Cover Blocks",
     "pageNumber": 81,
     "imageName": "p81_cover_block_round_20_mm_(39_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "20 mm",
+      "Mould Capacity": "39 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -806,7 +1068,12 @@ export const staticProducts = [
     "subcategory": "Round Cover Blocks",
     "pageNumber": 82,
     "imageName": "p82_cover_block_round_25_mm_(39_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "25 mm",
+      "Mould Capacity": "39 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -816,7 +1083,12 @@ export const staticProducts = [
     "subcategory": "Round Cover Blocks",
     "pageNumber": 83,
     "imageName": "p83_cover_block_round_30_mm_(39_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "30 mm",
+      "Mould Capacity": "39 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -826,7 +1098,12 @@ export const staticProducts = [
     "subcategory": "Round Cover Blocks",
     "pageNumber": 84,
     "imageName": "p84_cover_block_round_40_mm_(39_kvt).png",
-    "specifications": {},
+    "specifications": {
+      "Spacer Size": "40 mm",
+      "Mould Capacity": "39 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
+    },
     "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
   },
   {
@@ -836,38 +1113,13 @@ export const staticProducts = [
     "subcategory": "Round Cover Blocks",
     "pageNumber": 85,
     "imageName": "p85_cover_block_round_50_mm_(39_kvt).png",
-    "specifications": {},
-    "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
-  },
-  {
-    "_id": "p86",
-    "name": "Unknown Product",
-    "category": "Machinery",
-    "subcategory": "Production Machinery",
-    "pageNumber": 86,
-    "imageName": "p86_machinery_details_list_of_machinery_require_for_ma.png",
     "specifications": {
-      "Detail 0": "Machinery Details",
-      "Detail 2": "List Of Machinery Require For Manufactureing",
-      "Detail 3": "Paver Block ,Curb Stone , Covering Block &",
-      "Other Cementitems Areas Follow": "",
-      "Detail 5": "1.Vibratory Table (2 Nos.)",
-      "Detail 6": "2.Concrete Mixer (1 Nos.)",
-      "Detail 7": "3.Color Mixer (1 Nos.)",
-      "Detail 8": "4.M.S. FabricatedTable(2 Nos.)",
-      "Detail 9": "5.Color & Hardner",
-      "Detail 10": "6.Recycling Ply",
-      "Detail 11": "7.PVC Rubber Mould",
-      "-Plan LayOut": "",
-      "Detail 13": "Table 1",
-      "Detail 14": "Ms Table",
-      "Detail 15": "Table 2",
-      "Detail 16": "Color Mixer",
-      "Detail 17": "Concrete",
-      "Detail 18": "Mixer",
-      "-Plan Layout": ""
+      "Spacer Size": "50 mm",
+      "Mould Capacity": "39 Cavity",
+      "Material": "Heavy-Duty Reinforced Polymer",
+      "Usage/Application": "Concrete Spacing spacer for Rebar"
     },
-    "description": "Premium quality Unknown Product designed for high-durability production. Meets all industrial quality standards."
+    "description": "Premium quality Cover Block Round designed for high-durability production. Meets all industrial quality standards."
   },
   {
     "_id": "p87",
@@ -895,23 +1147,13 @@ export const staticProducts = [
     "pageNumber": 88,
     "imageName": "p88_roller_pan_mixer_power_require.png",
     "specifications": {
-      "Power Require": "7.5 HP",
-      "Detail 2": "Diamiter",
-      "Detail 3": "5 Ft.",
-      "Detail 5": "Requirement for 16 Ltr to 20 Ltr (90",
-      "Detail 6": "no Gear Oil)",
-      "Detail 7": "Storage Capacity",
-      "Detail 8": "450 Kg.",
-      "Detail 9": "Mixing",
-      "Detail 10": "By Heavy Rollers and Blade for fly",
-      "Detail 11": "ash bricks",
-      "Detail 12": "Usage",
-      "Detail 13": "Mixing of raw material for fly ash",
-      "Detail 14": "bricks",
-      "Detail 15": "Gear Types",
-      "Detail 16": "Powerful worm Reduction gear box",
-      "Detail 17": "transection unite crown pinion",
-      "Detail 18": "(25/1.30/1)"
+      "Power require": "7.5 HP",
+      "Diameter": "5 Ft.",
+      "Oil": "Requirement for 16 Ltr to 20 Ltr (90 no Gear Oil)",
+      "Storage Capacity": "450 Kg.",
+      "Mixing": "By Heavy Rollers and Blade for fly ash bricks",
+      "Usage": "Mixing of raw material for fly ash bricks",
+      "Gear Types": "Powerful worm Reduction gear box transection unite crown pinion (25/1.30/1)"
     },
     "description": "Premium quality Roller Pan Mixer designed for high-durability production. Meets all industrial quality standards."
   },
@@ -923,23 +1165,13 @@ export const staticProducts = [
     "pageNumber": 89,
     "imageName": "p89_pan_mixer_machine_for_cement_sand_concrete.png",
     "specifications": {
-      "Power Require": "7.5 HP",
-      "Detail 2": "Diamiter",
-      "Detail 3": "5 Ft.",
-      "Detail 5": "Requirement for 16 Ltr to 20 Ltr (90",
-      "Detail 6": "no Gear Oil)",
-      "Detail 7": "Storage Capacity",
-      "Detail 8": "450 Kg.",
-      "Detail 9": "Mixing",
-      "Detail 10": "By Heavy Rollers and Blade for fly",
-      "Detail 11": "ash bricks",
-      "Detail 12": "Usage",
-      "Detail 13": "Mixing of raw material for fly ash",
-      "Detail 14": "bricks",
-      "Detail 15": "Gear Types",
-      "Detail 16": "Powerful worm Reduction gear box",
-      "Detail 17": "transection unite crown pinion",
-      "Detail 18": "(25/1.30/1)"
+      "Power require": "7.5 HP",
+      "Diameter": "5 Ft.",
+      "Oil": "Requirement for 16 Ltr to 20 Ltr (90 no Gear Oil)",
+      "Storage Capacity": "450 Kg.",
+      "Mixing": "By Heavy Rollers and Blade for fly ash bricks",
+      "Usage": "Mixing of raw material for fly ash bricks",
+      "Gear Types": "Powerful worm Reduction gear box transection unite crown pinion (25/1.30/1)"
     },
     "description": "Premium quality Pan Mixer Machine For Cement Sand Concrete designed for high-durability production. Meets all industrial quality standards."
   },
@@ -969,8 +1201,9 @@ export const staticProducts = [
     "pageNumber": 91,
     "imageName": "p91_concrete_mixer_power_source_1.png",
     "specifications": {
-      "Power Source": "Motar 3 H.P.",
-      "Type Of Drum": "Tilting Drum Mixer",
+      "Power Source 1": "Diesel engine",
+      "Power Source 2": "Motar 3 H.P.",
+      "Type of Drum": "Tilting Drum Mixer",
       "Material": "Cast Iron",
       "Capacity": "Half Bag / Full Bag",
       "Portable": "Yes (on order)"
