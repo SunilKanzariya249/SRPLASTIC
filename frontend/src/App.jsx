@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { QuoteProvider } from './context/QuoteContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,6 +10,16 @@ import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
 import CategoryPage from './pages/CategoryPage';
+
+function ScrollToTop() {
+  const { pathname, search } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname, search]);
+
+  return null;
+}
 
 function Layout({ children }) {
   return (
@@ -28,6 +38,7 @@ function App() {
   return (
     <QuoteProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
