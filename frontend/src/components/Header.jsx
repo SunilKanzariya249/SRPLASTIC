@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, ShoppingCart, Trash2, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, Mail, ShoppingCart, Trash2, ArrowRight, ChevronRight, ChevronDown } from 'lucide-react';
 import { useQuote } from '../context/QuoteContext';
 
 export default function Header() {
@@ -9,6 +9,17 @@ export default function Header() {
   const [cartOpen, setCartOpen] = useState(false);
   const { quoteItems, removeFromQuote, updateQuantity, quoteCount, clearQuote } = useQuote();
   const location = useLocation();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) { // 768px is the md breakpoint
+        setMobileMenuOpen(false);
+        setMobileSubmenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const [inquirySubmitted, setInquirySubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -213,44 +224,89 @@ ${formData.message}
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-50 border-t border-slate-200 py-4 px-6 space-y-4">
-          <Link to="/" onClick={() => setMobileMenuOpen(false)} className={`block font-semibold text-base py-1 ${isActive('/') ? 'text-secondary' : 'text-slate-600'}`}>Home</Link>
-          <Link to="/about" onClick={() => setMobileMenuOpen(false)} className={`block font-semibold text-base py-1 ${isActive('/about') ? 'text-secondary' : 'text-slate-600'}`}>About Us</Link>
-          <div className="block py-1">
-            <div className="flex justify-between items-center">
+        <div className="absolute top-full left-0 right-0 bg-white border-t border-slate-200 shadow-2xl py-6 px-6 space-y-4 z-50">
+          <Link 
+            to="/" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`flex items-center justify-between font-bold text-base py-3 px-4 rounded-xl transition-all duration-200 ${
+              isActive('/') ? 'bg-secondary/10 text-secondary' : 'text-slate-700 hover:bg-slate-50'
+            }`}
+          >
+            <span>Home</span>
+            <ChevronRight size={16} className={isActive('/') ? 'text-secondary' : 'text-slate-400'} />
+          </Link>
+          
+          <Link 
+            to="/about" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`flex items-center justify-between font-bold text-base py-3 px-4 rounded-xl transition-all duration-200 ${
+              isActive('/about') ? 'bg-secondary/10 text-secondary' : 'text-slate-700 hover:bg-slate-50'
+            }`}
+          >
+            <span>About Us</span>
+            <ChevronRight size={16} className={isActive('/about') ? 'text-secondary' : 'text-slate-400'} />
+          </Link>
+
+          {/* Products Dropdown Accordion */}
+          <div className="rounded-xl overflow-hidden border border-slate-100 bg-white shadow-sm">
+            <div className="flex items-center justify-between">
               <Link 
                 to="/products" 
                 onClick={() => setMobileMenuOpen(false)} 
-                className={`font-semibold text-base ${isActive('/products') ? 'text-secondary' : 'text-slate-600'}`}
+                className={`flex-1 font-bold text-base py-3 px-4 transition-all duration-200 ${
+                  isActive('/products') ? 'text-secondary bg-primary/5' : 'text-slate-700 hover:bg-slate-50'
+                }`}
               >
                 Products
               </Link>
               <button 
-                onClick={(e) => { e.stopPropagation(); setMobileSubmenuOpen(!mobileSubmenuOpen); }}
-                className="p-2 text-slate-500 hover:text-primary transition focus:outline-none"
+                onClick={() => setMobileSubmenuOpen(!mobileSubmenuOpen)}
+                className="py-3 px-4 text-slate-500 hover:text-primary transition focus:outline-none border-l border-slate-100"
+                aria-label="Toggle Products Submenu"
               >
-                <svg className={`w-4 h-4 transition-transform duration-200 ${mobileSubmenuOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-                </svg>
+                <ChevronDown size={18} className={`transition-transform duration-300 ${mobileSubmenuOpen ? 'rotate-180 text-primary' : 'text-slate-400'}`} />
               </button>
             </div>
             
-            {/* Mobile Categories Submenu with height animation */}
-            <div className={`pl-4 border-l-2 border-slate-200 space-y-2 mt-2 transition-all duration-300 overflow-hidden ${
-              mobileSubmenuOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+            <div className={`transition-all duration-300 overflow-hidden ${
+              mobileSubmenuOpen ? 'max-h-[300px] border-t border-slate-100 opacity-100 py-2 bg-slate-50/70' : 'max-h-0 opacity-0 pointer-events-none'
             }`}>
-              <Link to="/category/Paver-Block-Plastic-Mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Plastic Mould</Link>
-              <Link to="/category/Paver-Block-PVC-Rubber-Mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block PVC Rubber Mould</Link>
-              <Link to="/category/Paver-Block-Machinery" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Machinery</Link>
-              <Link to="/category/Paver-Block-Chemicals" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Chemicals</Link>
-              <Link to="/category/Iron-Oxide-Color" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Iron Oxide Color</Link>
-              <Link to="/category/Recycle-Plastic-Sheet" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Recycle Plastic Sheet</Link>
+              {[
+                { name: "Paver Block Plastic Mould", path: "/category/Paver-Block-Plastic-Mould" },
+                { name: "Paver Block PVC Rubber Mould", path: "/category/Paver-Block-PVC-Rubber-Mould" },
+                { name: "Paver Block Machinery", path: "/category/Paver-Block-Machinery" },
+                { name: "Paver Block Chemicals", path: "/category/Paver-Block-Chemicals" },
+                { name: "Iron Oxide Color", path: "/category/Iron-Oxide-Color" },
+                { name: "Recycle Plastic Sheet", path: "/category/Recycle-Plastic-Sheet" }
+              ].map((cat) => (
+                <Link 
+                  key={cat.path}
+                  to={cat.path} 
+                  onClick={() => setMobileMenuOpen(false)} 
+                  className={`block px-6 py-2.5 text-xs font-bold transition-all duration-150 ${
+                    location.pathname === cat.path ? 'text-secondary pl-8 border-l-4 border-secondary' : 'text-slate-500 hover:text-primary hover:pl-7'
+                  }`}
+                >
+                  {cat.name}
+                </Link>
+              ))}
             </div>
           </div>
-          <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`block font-semibold text-base py-1 ${isActive('/contact') ? 'text-secondary' : 'text-slate-600'}`}>Contact Us</Link>
+
+          <Link 
+            to="/contact" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`flex items-center justify-between font-bold text-base py-3 px-4 rounded-xl transition-all duration-200 ${
+              isActive('/contact') ? 'bg-secondary/10 text-secondary' : 'text-slate-700 hover:bg-slate-50'
+            }`}
+          >
+            <span>Contact Us</span>
+            <ChevronRight size={16} className={isActive('/contact') ? 'text-secondary' : 'text-slate-400'} />
+          </Link>
+
           <button
             onClick={() => { setMobileMenuOpen(false); setCartOpen(true); }}
-            className="w-full bg-primary hover:bg-primary-dark text-white text-center font-bold py-2.5 rounded-lg transition"
+            className="w-full bg-primary hover:bg-primary-dark text-white text-center font-bold py-3.5 rounded-xl transition shadow-md text-sm tracking-wide"
           >
             Get a Quote ({quoteCount})
           </button>
