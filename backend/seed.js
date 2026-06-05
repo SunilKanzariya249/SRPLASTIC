@@ -10,7 +10,7 @@ const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/srplastic
 
 // Heuristics for categories
 function getCategoryInfo(pageNum) {
-  if (pageNum === 1 || pageNum === 86) return null; // Intro page or machinery list (not a product)
+  if (pageNum === 1 || pageNum === 86 || pageNum === 92) return null; // Intro page, machinery list, or old color page (not a product or replaced)
   if (pageNum >= 2 && pageNum <= 29) {
     return { category: 'PVC Mould', subcategory: pageNum >= 21 ? 'Tiles' : 'Paver Moulds' };
   }
@@ -209,14 +209,49 @@ async function seed() {
       // Match image filename
       const matchedImage = imageFiles.find(file => file.startsWith(`p${pageNum}_`)) || `page_${pageNum}.png`;
 
+      let finalName = name;
+      let finalDescription = `Premium quality ${name} designed for high-durability production. Meets all industrial quality standards.`;
+
+      if (pageNum === 93) {
+        finalName = "Hardener Chemical";
+        finalDescription = "A highly effective dual action liquid super plasticizer for the production of free flowing concrete in hot water or as a substantial water reducing agent for promoting high ultimate strengths.";
+        specifications = {
+          "Description": "A highly effective dual action liquid super plasticizer for the production of free flowing concrete in hot water or as a substantial water reducing agent for promoting high ultimate strengths.",
+          "Uses": "Bright Hardener can be used in the following areas: paver blocks, wall tiles, floor tiles, brick works, etc."
+        };
+      }
+
+      if (pageNum === 94) {
+        finalName = "Recycle Plastic Sheet";
+        finalDescription = "This plastic sheets are used in making of fly ash bricks and stacking of all kind of concrete products PVC rubber mould.";
+        specifications = {
+          "Sheet Size": "8 Feet x 4 Feet",
+          "Thickness": "8mm, 12mm, 18mm, 24mm"
+        };
+      }
+
       productsToInsert.push({
-        name,
+        name: finalName,
         category: catInfo.category,
         subcategory: catInfo.subcategory,
         pageNumber: pageNum,
         imageName: matchedImage,
         specifications,
-        description: `Premium quality ${name} designed for high-durability production. Meets all industrial quality standards.`
+        description: finalDescription
+      });
+    }
+
+    // Manually inject 7 color products (replacing page 92)
+    const colors = ['Red', 'Yellow', 'Green', 'Blue', 'Orange', 'Black', 'Brown'];
+    for (const color of colors) {
+      productsToInsert.push({
+        name: `Iron Oxide ${color} Color`,
+        category: 'Color',
+        subcategory: 'Colors',
+        pageNumber: 92,
+        imageName: `color/${color.toLowerCase()} color.png`,
+        specifications: {},
+        description: "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
       });
     }
 

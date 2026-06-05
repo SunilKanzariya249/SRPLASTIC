@@ -1211,43 +1211,100 @@ export const staticProducts = [
     "description": "Premium quality Concrete Mixer designed for high-durability production. Meets all industrial quality standards."
   },
   {
-    "_id": "p92",
-    "name": "Iron Oxide Pigment(colors) Iron Oxide Pigment Is Widley Used And Is The Largest",
+    "_id": "p92_red",
+    "name": "Iron Oxide Red Color",
     "category": "Color",
-    "subcategory": "Additives & Polish",
+    "subcategory": "Colors",
     "pageNumber": 92,
-    "imageName": "p92_iron_oxide_pigment(colors)_iron_oxide_pigment_is_w.png",
-    "specifications": {
-      "Detail 0": "AND BUILDING MATERIALS, SUCH AS PAVER BLOCK, WALL",
-      "Detail 1": "DECORATION, ASPHALT ROAD, COLOR TILE,CONCRATE BRICK",
-      "Detail 2": "AND BLOCK AND SO ON.",
-      "Detail 3": "IRON OXIDE PIGMENTS CAN ALSO BE WIDLY USED IN",
-      "Detail 4": "RUBBER, PLASTICS,CERAMICS, COSMETICS, PHARMACEUTICALS,",
-      "Detail 5": "PAPER, LEATHER AND OTHERINDUSTRIES."
-    },
-    "description": "Premium quality Iron Oxide Pigment(colors) Iron Oxide Pigment Is Widley Used And Is The Largest designed for high-durability production. Meets all industrial quality standards."
+    "imageName": "color/red color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_yellow",
+    "name": "Iron Oxide Yellow Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/yellow color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_green",
+    "name": "Iron Oxide Green Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/green color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_blue",
+    "name": "Iron Oxide Blue Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/blue color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_orange",
+    "name": "Iron Oxide Orange Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/orange color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_black",
+    "name": "Iron Oxide Black Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/black color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
+  },
+  {
+    "_id": "p92_brown",
+    "name": "Iron Oxide Brown Color",
+    "category": "Color",
+    "subcategory": "Colors",
+    "pageNumber": 92,
+    "imageName": "color/brown color.png",
+    "specifications": {},
+    "description": "Iron Oxide Pigment is widely used and is the largest colored inorganic pigment in production and consumption. In the construction industries, it can be used as a colorant for a variety of precast concrete and building materials, such as paver blocks, wall decoration, asphalt roads, color tiles, concrete bricks and blocks, and so on. Iron Oxide Pigments can also be widely used in rubber, plastics, ceramics, cosmetics, pharmaceuticals, paper, leather, and other industries."
   },
   {
     "_id": "p93",
-    "name": "Hardner Chemical A Highly Effective Dual Action Liquid Super Plasticizer Forthe",
+    "name": "Hardener Chemical",
     "category": "Chemicals & Hardener",
     "subcategory": "Additives & Polish",
     "pageNumber": 93,
     "imageName": "p93_hardner_chemical_a_highly_effective_dual_action_li.png",
-    "specifications": {},
-    "description": "Premium quality Hardner Chemical A Highly Effective Dual Action Liquid Super Plasticizer Forthe designed for high-durability production. Meets all industrial quality standards."
+    "specifications": {
+      "Description": "A highly effective dual action liquid super plasticizer for the production of free flowing concrete in hot water or as a substantial water reducing agent for promoting high ultimate strengths.",
+      "Uses": "Bright Hardener can be used in the following areas: paver blocks, wall tiles, floor tiles, brick works, etc."
+    },
+    "description": "A highly effective dual action liquid super plasticizer for the production of free flowing concrete in hot water or as a substantial water reducing agent for promoting high ultimate strengths."
   },
   {
     "_id": "p94",
-    "name": "Plastic Sheet This Plastic Sheets Are Use In Making Of Fly Ash Bricks And",
+    "name": "Recycle Plastic Sheet",
     "category": "Plastic Sheet",
     "subcategory": "Additives & Polish",
     "pageNumber": 94,
     "imageName": "p94_plastic_sheet_this_plastic_sheets_are_use_in_makin.png",
     "specifications": {
-      "Sheet Size": "THICKNESS                                        8MM, 12MM, 18MM, 24MM."
+      "Sheet Size": "8 Feet x 4 Feet",
+      "Thickness": "8mm, 12mm, 18mm, 24mm"
     },
-    "description": "Premium quality Plastic Sheet This Plastic Sheets Are Use In Making Of Fly Ash Bricks And designed for high-durability production. Meets all industrial quality standards."
+    "description": "This plastic sheets are used in making of fly ash bricks and stacking of all kind of concrete products PVC rubber mould."
   },
   {
     "_id": "p95",
