@@ -2,7 +2,7 @@ export const staticProducts = [
   {
     "_id": "p2",
     "name": "Colorado Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 2,
     "imageName": "p2_colorado_paver.png",
@@ -17,7 +17,7 @@ export const staticProducts = [
   {
     "_id": "p3",
     "name": "Cosmic Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 3,
     "imageName": "p3_cosmic_paver.png",
@@ -32,7 +32,7 @@ export const staticProducts = [
   {
     "_id": "p4",
     "name": "Damru Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 4,
     "imageName": "p4_damru_paver.png",
@@ -47,7 +47,7 @@ export const staticProducts = [
   {
     "_id": "p5",
     "name": "Zigzag Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 5,
     "imageName": "p5_zigzag_paver.png",
@@ -62,7 +62,7 @@ export const staticProducts = [
   {
     "_id": "p6",
     "name": "I-shape Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 6,
     "imageName": "p6_i_shape_paver_.png",
@@ -77,7 +77,7 @@ export const staticProducts = [
   {
     "_id": "p7",
     "name": "Brooks-ab Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 7,
     "imageName": "p7_brooks_ab_paver_brooks_a.png",
@@ -92,7 +92,7 @@ export const staticProducts = [
   {
     "_id": "p8",
     "name": "Kajukatri Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 8,
     "imageName": "p8_kajukatri_paver.png",
@@ -107,7 +107,7 @@ export const staticProducts = [
   {
     "_id": "p9",
     "name": "3d-a Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 9,
     "imageName": "p9_3d_a_paver.png",
@@ -122,7 +122,7 @@ export const staticProducts = [
   {
     "_id": "p10",
     "name": "Hexagon Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 10,
     "imageName": "p10_hexagon_paver.png",
@@ -137,7 +137,7 @@ export const staticProducts = [
   {
     "_id": "p11",
     "name": "Mashroom Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 11,
     "imageName": "p11_mashroom_paver.png",
@@ -152,7 +152,7 @@ export const staticProducts = [
   {
     "_id": "p12",
     "name": "D-four Square",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 12,
     "imageName": "p12_d_four_square.png",
@@ -167,7 +167,7 @@ export const staticProducts = [
   {
     "_id": "p13",
     "name": "Lethar-a Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 13,
     "imageName": "p13_lethar_a_paver.png",
@@ -182,7 +182,7 @@ export const staticProducts = [
   {
     "_id": "p14",
     "name": "Cobal Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 14,
     "imageName": "p14_cobal_paver.png",
@@ -197,7 +197,7 @@ export const staticProducts = [
   {
     "_id": "p15",
     "name": "Lethar-a Paver",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 15,
     "imageName": "p15_lethar_a_paver.png",
@@ -212,7 +212,7 @@ export const staticProducts = [
   {
     "_id": "p16",
     "name": "Brick",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 16,
     "imageName": "p16_brick.png",
@@ -227,7 +227,7 @@ export const staticProducts = [
   {
     "_id": "p17",
     "name": "Curb Stone Round Shape",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 17,
     "imageName": "p17_curb_stone_round_shape.png",
@@ -241,7 +241,7 @@ export const staticProducts = [
   {
     "_id": "p18",
     "name": "Curb Stone Round Shape",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 18,
     "imageName": "p18_curb_stone_round_shape.png",
@@ -255,7 +255,7 @@ export const staticProducts = [
   {
     "_id": "p19",
     "name": "Double Rounde",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 19,
     "imageName": "p19_double_rounde.png",
@@ -270,7 +270,7 @@ export const staticProducts = [
   {
     "_id": "p20",
     "name": "Square",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Paver Moulds",
     "pageNumber": 20,
     "imageName": "p20_square.png",
@@ -285,7 +285,7 @@ export const staticProducts = [
   {
     "_id": "p21",
     "name": "Plain Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 21,
     "imageName": "p21_plain_tile.png",
@@ -300,7 +300,7 @@ export const staticProducts = [
   {
     "_id": "p22",
     "name": "Rangoli Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 22,
     "imageName": "p22_rangoli_tile.png",
@@ -315,7 +315,7 @@ export const staticProducts = [
   {
     "_id": "p23",
     "name": "Rangoli Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 23,
     "imageName": "p23_rangoli_tile.png",
@@ -330,7 +330,7 @@ export const staticProducts = [
   {
     "_id": "p24",
     "name": "Camera Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 24,
     "imageName": "p24_camera_tile.png",
@@ -345,7 +345,7 @@ export const staticProducts = [
   {
     "_id": "p25",
     "name": "36-coin Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 25,
     "imageName": "p25_36_coin_tile.png",
@@ -360,7 +360,7 @@ export const staticProducts = [
   {
     "_id": "p26",
     "name": "Wave Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 26,
     "imageName": "p26_wave_tile.png",
@@ -375,7 +375,7 @@ export const staticProducts = [
   {
     "_id": "p27",
     "name": "Capsule Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 27,
     "imageName": "p27_capsule_tile.png",
@@ -390,7 +390,7 @@ export const staticProducts = [
   {
     "_id": "p28",
     "name": "Square Accupressure",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 28,
     "imageName": "p28_square_accupressure.png",
@@ -405,7 +405,7 @@ export const staticProducts = [
   {
     "_id": "p29",
     "name": "Swastik Tile",
-    "category": "PVC Mould",
+    "category": "Paver Block Plastic Mould",
     "subcategory": "Tiles",
     "pageNumber": 29,
     "imageName": "p29_swastik_tile.png",
@@ -420,7 +420,7 @@ export const staticProducts = [
   {
     "_id": "p30",
     "name": "Zigzag-a Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 30,
     "imageName": "p30_zigzag_a_rubber_mould.png",
@@ -432,7 +432,7 @@ export const staticProducts = [
   {
     "_id": "p31",
     "name": "Zigzag-b Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 31,
     "imageName": "p31_zigzag_b_rubber_mould.png",
@@ -444,7 +444,7 @@ export const staticProducts = [
   {
     "_id": "p32",
     "name": "Cosmic-a Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 32,
     "imageName": "p32_cosmic_a_rubber_mould.png",
@@ -456,7 +456,7 @@ export const staticProducts = [
   {
     "_id": "p33",
     "name": "Cosmic-b Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 33,
     "imageName": "p33_cosmic_b_rubber_mould.png",
@@ -468,7 +468,7 @@ export const staticProducts = [
   {
     "_id": "p34",
     "name": "I Shape-a(big)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 34,
     "imageName": "p34_i_shape_a(big).png",
@@ -480,7 +480,7 @@ export const staticProducts = [
   {
     "_id": "p35",
     "name": "I Shape-a(small)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 35,
     "imageName": "p35_i_shape_a(small).png",
@@ -492,7 +492,7 @@ export const staticProducts = [
   {
     "_id": "p36",
     "name": "Colorado-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 36,
     "imageName": "p36_colorado_a.png",
@@ -504,7 +504,7 @@ export const staticProducts = [
   {
     "_id": "p37",
     "name": "Damru-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 37,
     "imageName": "p37_damru_a.png",
@@ -516,7 +516,7 @@ export const staticProducts = [
   {
     "_id": "p38",
     "name": "Damru-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 38,
     "imageName": "p38_damru_b.png",
@@ -528,7 +528,7 @@ export const staticProducts = [
   {
     "_id": "p39",
     "name": "Hexagon-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 39,
     "imageName": "p39_hexagon_a.png",
@@ -540,7 +540,7 @@ export const staticProducts = [
   {
     "_id": "p40",
     "name": "Hexagon-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 40,
     "imageName": "p40_hexagon_b.png",
@@ -552,7 +552,7 @@ export const staticProducts = [
   {
     "_id": "p41",
     "name": "Camel Hump-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 41,
     "imageName": "p41_camel_hump_a.png",
@@ -564,7 +564,7 @@ export const staticProducts = [
   {
     "_id": "p42",
     "name": "Camel Hump-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 42,
     "imageName": "p42_camel_hump_b.png",
@@ -576,7 +576,7 @@ export const staticProducts = [
   {
     "_id": "p43",
     "name": "Tri Hex-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 43,
     "imageName": "p43_tri_hex_a.png",
@@ -588,7 +588,7 @@ export const staticProducts = [
   {
     "_id": "p44",
     "name": "Tri Hex-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 44,
     "imageName": "p44_tri_hex_b.png",
@@ -600,7 +600,7 @@ export const staticProducts = [
   {
     "_id": "p45",
     "name": "3d-a Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 45,
     "imageName": "p45_3d_a_rubber_mould.png",
@@ -612,7 +612,7 @@ export const staticProducts = [
   {
     "_id": "p46",
     "name": "3d-b Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 46,
     "imageName": "p46_3d_b_rubber_mould.png",
@@ -624,7 +624,7 @@ export const staticProducts = [
   {
     "_id": "p47",
     "name": "Kajukatri-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 47,
     "imageName": "p47_kajukatri_a.png",
@@ -636,7 +636,7 @@ export const staticProducts = [
   {
     "_id": "p48",
     "name": "Half Hexa-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 48,
     "imageName": "p48_half_hexa_a.png",
@@ -648,7 +648,7 @@ export const staticProducts = [
   {
     "_id": "p49",
     "name": "Brooks-a(big)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 49,
     "imageName": "p49_brooks_a(big).png",
@@ -660,7 +660,7 @@ export const staticProducts = [
   {
     "_id": "p50",
     "name": "Brooks-b(big)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 50,
     "imageName": "p50_brooks_b(big).png",
@@ -672,7 +672,7 @@ export const staticProducts = [
   {
     "_id": "p51",
     "name": "Brooks-a(small)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 51,
     "imageName": "p51_brooks_a(small).png",
@@ -684,7 +684,7 @@ export const staticProducts = [
   {
     "_id": "p52",
     "name": "Brooks-b(small)",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 52,
     "imageName": "p52_brooks_b(small).png",
@@ -696,7 +696,7 @@ export const staticProducts = [
   {
     "_id": "p53",
     "name": "Star-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 53,
     "imageName": "p53_star_a.png",
@@ -708,7 +708,7 @@ export const staticProducts = [
   {
     "_id": "p54",
     "name": "Cell-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 54,
     "imageName": "p54_cell_a.png",
@@ -720,7 +720,7 @@ export const staticProducts = [
   {
     "_id": "p55",
     "name": "Johnson-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 55,
     "imageName": "p55_johnson_a.png",
@@ -732,7 +732,7 @@ export const staticProducts = [
   {
     "_id": "p56",
     "name": "Flower-a",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 56,
     "imageName": "p56_flower_a.png",
@@ -744,7 +744,7 @@ export const staticProducts = [
   {
     "_id": "p57",
     "name": "Grass Paver",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 57,
     "imageName": "p57_grass_paver.png",
@@ -756,7 +756,7 @@ export const staticProducts = [
   {
     "_id": "p58",
     "name": "Lether 8 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 58,
     "imageName": "p58_lether_8_x_8.png",
@@ -768,7 +768,7 @@ export const staticProducts = [
   {
     "_id": "p59",
     "name": "Lether 4 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 59,
     "imageName": "p59_lether_4_x_8.png",
@@ -780,7 +780,7 @@ export const staticProducts = [
   {
     "_id": "p60",
     "name": "Antiskid 8 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 60,
     "imageName": "p60_antiskid_8_x_8.png",
@@ -792,7 +792,7 @@ export const staticProducts = [
   {
     "_id": "p61",
     "name": "Antiskid 4 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 61,
     "imageName": "p61_antiskid_4_x_8.png",
@@ -804,7 +804,7 @@ export const staticProducts = [
   {
     "_id": "p62",
     "name": "Stone Face 8 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 62,
     "imageName": "p62_stone_face_8_x_8.png",
@@ -816,7 +816,7 @@ export const staticProducts = [
   {
     "_id": "p63",
     "name": "Stone Face 4 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 63,
     "imageName": "p63_stone_face_4_x_8.png",
@@ -828,7 +828,7 @@ export const staticProducts = [
   {
     "_id": "p64",
     "name": "Four Square 8 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 64,
     "imageName": "p64_four_square_8_x_8.png",
@@ -840,7 +840,7 @@ export const staticProducts = [
   {
     "_id": "p65",
     "name": "Four Square 4 X 8",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 65,
     "imageName": "p65_four_square_4_x_8.png",
@@ -852,7 +852,7 @@ export const staticProducts = [
   {
     "_id": "p66",
     "name": "Four Square 4 X 4",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 66,
     "imageName": "p66_four_square_4_x_4.png",
@@ -864,7 +864,7 @@ export const staticProducts = [
   {
     "_id": "p67",
     "name": "Marble 10 X 5",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 67,
     "imageName": "p67_marble_10_x_5.png",
@@ -876,7 +876,7 @@ export const staticProducts = [
   {
     "_id": "p68",
     "name": "Marble 5 X 5",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 68,
     "imageName": "p68_marble_5_x_5.png",
@@ -888,7 +888,7 @@ export const staticProducts = [
   {
     "_id": "p69",
     "name": "Stone Face 6 X 12",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 69,
     "imageName": "p69_stone_face_6_x_12.png",
@@ -900,7 +900,7 @@ export const staticProducts = [
   {
     "_id": "p70",
     "name": "Stone Face 6 X 6",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 70,
     "imageName": "p70_stone_face_6_x_6.png",
@@ -912,7 +912,7 @@ export const staticProducts = [
   {
     "_id": "p71",
     "name": "Stone Type 6 X 12-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 71,
     "imageName": "p71_stone_type_6_x_12_b.png",
@@ -924,7 +924,7 @@ export const staticProducts = [
   {
     "_id": "p72",
     "name": "Stone Type 6 X 6-b",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 72,
     "imageName": "p72_stone_type_6_x_6_b.png",
@@ -936,7 +936,7 @@ export const staticProducts = [
   {
     "_id": "p73",
     "name": "Mashroom 8 X 10",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 73,
     "imageName": "p73_mashroom_8_x_10.png",
@@ -948,7 +948,7 @@ export const staticProducts = [
   {
     "_id": "p74",
     "name": "10 X 10 Rubber Mould",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Rubber Moulds",
     "pageNumber": 74,
     "imageName": "p74_10_x_10_rubber_mould.png",
@@ -962,7 +962,7 @@ export const staticProducts = [
   {
     "_id": "p75",
     "name": "6 X 6 Wall Cllading",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Wall Claddings",
     "pageNumber": 75,
     "imageName": "p75_6_x_6_wall_cllading.png",
@@ -976,7 +976,7 @@ export const staticProducts = [
   {
     "_id": "p76",
     "name": "3 X 9 Wall Cllading",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Wall Claddings",
     "pageNumber": 76,
     "imageName": "p76_3_x_9_wall_cllading.png",
@@ -990,7 +990,7 @@ export const staticProducts = [
   {
     "_id": "p77",
     "name": "6 X 6 Wall Cllading",
-    "category": "Rubber Mould",
+    "category": "Paver Block PVC Rubber Mould",
     "subcategory": "Wall Claddings",
     "pageNumber": 77,
     "imageName": "p77_6_x_6_wall_cllading.png",
@@ -1124,7 +1124,7 @@ export const staticProducts = [
   {
     "_id": "p87",
     "name": "Vibrator Table Machine For Paver Block",
-    "category": "Machinery",
+    "category": "Paver Block Machinery",
     "subcategory": "Production Machinery",
     "pageNumber": 87,
     "imageName": "p87_vibrator_table_machine_for_paver_block.png",
@@ -1142,7 +1142,7 @@ export const staticProducts = [
   {
     "_id": "p88",
     "name": "Roller Pan Mixer",
-    "category": "Machinery",
+    "category": "Paver Block Machinery",
     "subcategory": "Production Machinery",
     "pageNumber": 88,
     "imageName": "p88_roller_pan_mixer_power_require.png",
@@ -1160,7 +1160,7 @@ export const staticProducts = [
   {
     "_id": "p89",
     "name": "Pan Mixer Machine For Cement Sand Concrete",
-    "category": "Machinery",
+    "category": "Paver Block Machinery",
     "subcategory": "Production Machinery",
     "pageNumber": 89,
     "imageName": "p89_pan_mixer_machine_for_cement_sand_concrete.png",
@@ -1178,7 +1178,7 @@ export const staticProducts = [
   {
     "_id": "p90",
     "name": "Color Mixer Machine For Top Color Layer Of Paver Blocks",
-    "category": "Machinery",
+    "category": "Paver Block Machinery",
     "subcategory": "Production Machinery",
     "pageNumber": 90,
     "imageName": "p90_color_mixer_machine_for_top_color_layer_of_paver_b.png",
@@ -1196,7 +1196,7 @@ export const staticProducts = [
   {
     "_id": "p91",
     "name": "Concrete Mixer",
-    "category": "Machinery",
+    "category": "Paver Block Machinery",
     "subcategory": "Production Machinery",
     "pageNumber": 91,
     "imageName": "p91_concrete_mixer_power_source_1.png",
@@ -1213,7 +1213,7 @@ export const staticProducts = [
   {
     "_id": "p92_red",
     "name": "Iron Oxide Red Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/red color.png",
@@ -1223,7 +1223,7 @@ export const staticProducts = [
   {
     "_id": "p92_yellow",
     "name": "Iron Oxide Yellow Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/yellow color.png",
@@ -1233,7 +1233,7 @@ export const staticProducts = [
   {
     "_id": "p92_green",
     "name": "Iron Oxide Green Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/green color.png",
@@ -1243,7 +1243,7 @@ export const staticProducts = [
   {
     "_id": "p92_blue",
     "name": "Iron Oxide Blue Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/blue color.png",
@@ -1253,7 +1253,7 @@ export const staticProducts = [
   {
     "_id": "p92_orange",
     "name": "Iron Oxide Orange Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/orange color.png",
@@ -1263,7 +1263,7 @@ export const staticProducts = [
   {
     "_id": "p92_black",
     "name": "Iron Oxide Black Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/black color.png",
@@ -1273,7 +1273,7 @@ export const staticProducts = [
   {
     "_id": "p92_brown",
     "name": "Iron Oxide Brown Color",
-    "category": "Color",
+    "category": "Iron Oxide Color",
     "subcategory": "Colors",
     "pageNumber": 92,
     "imageName": "color/brown color.png",
@@ -1283,7 +1283,7 @@ export const staticProducts = [
   {
     "_id": "p93",
     "name": "Hardener Chemical",
-    "category": "Chemicals & Hardener",
+    "category": "Paver Block Chemicals",
     "subcategory": "Additives & Polish",
     "pageNumber": 93,
     "imageName": "p93_hardner_chemical_a_highly_effective_dual_action_li.png",
@@ -1296,7 +1296,7 @@ export const staticProducts = [
   {
     "_id": "p94",
     "name": "Recycle Plastic Sheet",
-    "category": "Plastic Sheet",
+    "category": "Recycle Plastic Sheet",
     "subcategory": "Additives & Polish",
     "pageNumber": 94,
     "imageName": "p94_plastic_sheet_this_plastic_sheets_are_use_in_makin.png",
@@ -1309,7 +1309,7 @@ export const staticProducts = [
   {
     "_id": "p95",
     "name": "Laqure Polish",
-    "category": "Chemicals & Hardener",
+    "category": "Paver Block Chemicals",
     "subcategory": "Additives & Polish",
     "pageNumber": 95,
     "imageName": "p95_lacqure_polish.png",

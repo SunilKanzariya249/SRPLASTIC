@@ -152,23 +152,23 @@ ${formData.message}
             {/* Dropdown Box - aligned with left-0, starting at bottom of navbar top-[53px], sliding down on hover */}
             {/* before: pseudo-elements create an invisible hover bridge of 25px above the box to prevent mouse-leave events */}
             <div className="absolute left-0 top-[54px] w-64 bg-white border border-slate-150 rounded-none shadow-xl py-0 opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-50 before:absolute before:content-[''] before:w-full before:h-[25px] before:-top-[25px] before:left-0">
-              <Link to="/category/pvc-mould" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
-                PVC Paver Moulds
+              <Link to="/category/Paver-Block-Plastic-Mould" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
+                Paver Block Plastic Mould
               </Link>
-              <Link to="/category/rubber-mould" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
-                Rubber Moulds
+              <Link to="/category/Paver-Block-PVC-Rubber-Mould" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
+                Paver Block PVC Rubber Mould
               </Link>
-              <Link to="/category/machinery" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
-                Machinery & Mixers
+              <Link to="/category/Paver-Block-Machinery" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
+                Paver Block Machinery
               </Link>
-              <Link to="/category/chemicals-hardner" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
-                Chemicals & Hardeners
+              <Link to="/category/Paver-Block-Chemicals" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
+                Paver Block Chemicals
               </Link>
-              <Link to="/category/color" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
-                Iron Oxide Colors
+              <Link to="/category/Iron-Oxide-Color" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary border-b border-slate-100 transition duration-150">
+                Iron Oxide Color
               </Link>
-              <Link to="/category/plastic-sheet" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary transition duration-150">
-                Recycle Plastic Sheets
+              <Link to="/category/Recycle-Plastic-Sheet" className="block px-5 py-3 text-base font-semibold text-slate-700 hover:bg-primary/5 hover:text-primary transition duration-150">
+                Recycle Plastic Sheet
               </Link>
             </div>
           </div>
@@ -239,12 +239,12 @@ ${formData.message}
             <div className={`pl-4 border-l-2 border-slate-200 space-y-2 mt-2 transition-all duration-300 overflow-hidden ${
               mobileSubmenuOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
             }`}>
-              <Link to="/category/pvc-mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">PVC Paver Moulds</Link>
-              <Link to="/category/rubber-mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Rubber Moulds</Link>
-              <Link to="/category/machinery" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Machinery & Mixers</Link>
-              <Link to="/category/chemicals-hardner" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Chemicals & Hardeners</Link>
-              <Link to="/category/color" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Iron Oxide Colors</Link>
-              <Link to="/category/plastic-sheet" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Recycle Plastic Sheets</Link>
+              <Link to="/category/Paver-Block-Plastic-Mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Plastic Mould</Link>
+              <Link to="/category/Paver-Block-PVC-Rubber-Mould" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block PVC Rubber Mould</Link>
+              <Link to="/category/Paver-Block-Machinery" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Machinery</Link>
+              <Link to="/category/Paver-Block-Chemicals" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Paver Block Chemicals</Link>
+              <Link to="/category/Iron-Oxide-Color" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Iron Oxide Color</Link>
+              <Link to="/category/Recycle-Plastic-Sheet" onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-slate-500 hover:text-primary py-1">Recycle Plastic Sheet</Link>
             </div>
           </div>
           <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`block font-semibold text-base py-1 ${isActive('/contact') ? 'text-secondary' : 'text-slate-600'}`}>Contact Us</Link>

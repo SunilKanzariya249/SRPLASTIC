@@ -12,30 +12,30 @@ const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/srplastic
 function getCategoryInfo(pageNum) {
   if (pageNum === 1 || pageNum === 86 || pageNum === 92) return null; // Intro page, machinery list, or old color page (not a product or replaced)
   if (pageNum >= 2 && pageNum <= 29) {
-    return { category: 'PVC Mould', subcategory: pageNum >= 21 ? 'Tiles' : 'Paver Moulds' };
+    return { category: 'Paver Block Plastic Mould', subcategory: pageNum >= 21 ? 'Tiles' : 'Paver Moulds' };
   }
   if (pageNum >= 30 && pageNum <= 74) {
-    return { category: 'Rubber Mould', subcategory: 'Rubber Moulds' };
+    return { category: 'Paver Block PVC Rubber Mould', subcategory: 'Rubber Moulds' };
   }
   if (pageNum >= 75 && pageNum <= 77) {
-    return { category: 'Rubber Mould', subcategory: 'Wall Claddings' };
+    return { category: 'Paver Block PVC Rubber Mould', subcategory: 'Wall Claddings' };
   }
   if (pageNum >= 78 && pageNum <= 85) {
     return { category: 'Cover Block', subcategory: pageNum >= 81 ? 'Round Cover Blocks' : 'Square Cover Blocks' };
   }
   if (pageNum >= 86 && pageNum <= 91) {
-    return { category: 'Machinery', subcategory: 'Production Machinery' };
+    return { category: 'Paver Block Machinery', subcategory: 'Production Machinery' };
   }
   if (pageNum === 92) {
-    return { category: 'Color', subcategory: 'Colors' };
+    return { category: 'Iron Oxide Color', subcategory: 'Colors' };
   }
   if (pageNum === 93 || pageNum === 95) {
-    return { category: 'Chemicals & Hardener', subcategory: 'Additives & Polish' };
+    return { category: 'Paver Block Chemicals', subcategory: 'Additives & Polish' };
   }
   if (pageNum === 94) {
-    return { category: 'Plastic Sheet', subcategory: 'Sheets' };
+    return { category: 'Recycle Plastic Sheet', subcategory: 'Sheets' };
   }
-  return { category: 'PVC Mould', subcategory: 'Other' };
+  return { category: 'Paver Block Plastic Mould', subcategory: 'Other' };
 }
 
 // Clean and capitalize titles
@@ -246,7 +246,7 @@ async function seed() {
     for (const color of colors) {
       productsToInsert.push({
         name: `Iron Oxide ${color} Color`,
-        category: 'Color',
+        category: 'Iron Oxide Color',
         subcategory: 'Colors',
         pageNumber: 92,
         imageName: `color/${color.toLowerCase()} color.png`,

@@ -14,18 +14,19 @@ export default function Products() {
 
   const { addToQuote } = useQuote();
 
-  // Selected category from URL params or default to 'All'
-  const selectedCategory = searchParams.get('category') || 'All';
+  // Selected category from URL params or default to 'All' (normalize dashes to spaces)
+  const rawCategory = searchParams.get('category') || 'All';
+  const selectedCategory = rawCategory.replace(/-/g, ' ');
 
   const categories = [
     'All',
-    'PVC Mould',
-    'Rubber Mould',
+    'Paver Block Plastic Mould',
+    'Paver Block PVC Rubber Mould',
     'Cover Block',
-    'Machinery',
-    'Color',
-    'Chemicals & Hardener',
-    'Plastic Sheet'
+    'Paver Block Machinery',
+    'Iron Oxide Color',
+    'Paver Block Chemicals',
+    'Recycle Plastic Sheet'
   ];
 
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Products() {
       setLoading(true);
       try {
         const API_URL = import.meta.env.VITE_API_URL || '';
-        let url = `${API_URL}/api/products?category=${encodeURIComponent(selectedCategory)}`;
+        let url = `${API_URL}/api/products?category=${encodeURIComponent(rawCategory)}`;
         if (searchTerm) {
           url += `&search=${searchTerm}`;
         }
@@ -73,7 +74,8 @@ export default function Products() {
   };
 
   const handleCategorySelect = (cat) => {
-    setSearchParams({ category: cat });
+    const slug = cat === 'All' ? 'All' : cat.replace(/\s+/g, '-');
+    setSearchParams({ category: slug });
     setShowMobileFilters(false);
   };
 

@@ -5,23 +5,37 @@ import { useQuote } from '../context/QuoteContext';
 import { staticProducts } from '../data/staticProducts';
 
 const categoryMap = {
-  'pvc-mould': 'PVC Mould',
-  'rubber-mould': 'Rubber Mould',
+  'pvc-mould': 'Paver Block Plastic Mould',
+  'rubber-mould': 'Paver Block PVC Rubber Mould',
   'cover-block': 'Cover Block',
-  'machinery': 'Machinery',
-  'color': 'Color',
-  'chemicals-hardner': 'Chemicals & Hardener',
-  'plastic-sheet': 'Plastic Sheet'
+  'machinery': 'Paver Block Machinery',
+  'color': 'Iron Oxide Color',
+  'chemicals-hardner': 'Paver Block Chemicals',
+  'plastic-sheet': 'Recycle Plastic Sheet',
+  // New slugs
+  'Paver-Block-Plastic-Mould': 'Paver Block Plastic Mould',
+  'Paver-Block-PVC-Rubber-Mould': 'Paver Block PVC Rubber Mould',
+  'Paver-Block-Machinery': 'Paver Block Machinery',
+  'Iron-Oxide-Color': 'Iron Oxide Color',
+  'Paver-Block-Chemicals': 'Paver Block Chemicals',
+  'Recycle-Plastic-Sheet': 'Recycle Plastic Sheet'
 };
 
 const titleMap = {
-  'pvc-mould': 'PVC Paver Moulds',
-  'rubber-mould': 'Rubber Moulds',
+  'pvc-mould': 'Paver Block Plastic Mould',
+  'rubber-mould': 'Paver Block PVC Rubber Mould',
   'cover-block': 'Curb & Cover Blocks',
   'machinery': 'Paver Block Machinery',
-  'color': 'Iron Oxide Colors',
-  'chemicals-hardner': 'Chemicals & Hardeners',
-  'plastic-sheet': 'Recycle Plastic Sheets'
+  'color': 'Iron Oxide Color',
+  'chemicals-hardner': 'Paver Block Chemicals',
+  'plastic-sheet': 'Recycle Plastic Sheet',
+  // New slugs
+  'Paver-Block-Plastic-Mould': 'Paver Block Plastic Mould',
+  'Paver-Block-PVC-Rubber-Mould': 'Paver Block PVC Rubber Mould',
+  'Paver-Block-Machinery': 'Paver Block Machinery',
+  'Iron-Oxide-Color': 'Iron Oxide Color',
+  'Paver-Block-Chemicals': 'Paver Block Chemicals',
+  'Recycle-Plastic-Sheet': 'Recycle Plastic Sheet'
 };
 
 const descMap = {
@@ -31,7 +45,14 @@ const descMap = {
   'machinery': 'Heavy-duty vibrator tables, pan concrete mixers, top color layer mixers, and block machine layouts.',
   'color': 'UV-stable, high-dispersion iron oxide coloring pigments to produce bright, long-lasting concrete blocks.',
   'chemicals-hardner': 'Industrial-grade concrete hardening additives, dual-action superplasticizers, and lacquer polishes.',
-  'plastic-sheet': 'Sustainable, heavy-gauge recycled plastic pallets and sheets engineered for concrete block stacks.'
+  'plastic-sheet': 'Sustainable, heavy-gauge recycled plastic pallets and sheets engineered for concrete block stacks.',
+  // New slugs
+  'Paver-Block-Plastic-Mould': 'Explore our range of premium PVC paver block molds for heavy-duty, consistent tile and paver manufacturing.',
+  'Paver-Block-PVC-Rubber-Mould': 'Tear-resistant, durable, and highly flexible rubber moulds designed for premium textures and long service life.',
+  'Paver-Block-Machinery': 'Heavy-duty vibrator tables, pan concrete mixers, top color layer mixers, and block machine layouts.',
+  'Iron-Oxide-Color': 'UV-stable, high-dispersion iron oxide coloring pigments to produce bright, long-lasting concrete blocks.',
+  'Paver-Block-Chemicals': 'Industrial-grade concrete hardening additives, dual-action superplasticizers, and lacquer polishes.',
+  'Recycle-Plastic-Sheet': 'Sustainable, heavy-gauge recycled plastic pallets and sheets engineered for concrete block stacks.'
 };
 
 export default function CategoryPage() {

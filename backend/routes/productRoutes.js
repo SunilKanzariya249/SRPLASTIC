@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     let query = {};
 
     if (category && category !== 'All') {
-      query.category = category;
+      query.category = category.replace(/-/g, ' ');
     }
 
     if (search) {
