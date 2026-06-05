@@ -214,15 +214,14 @@ export default function Products() {
                   key={product._id}
                   className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden flex flex-col card-glow hover:border-primary/20"
                 >
-                  {/* Image */}
                   <Link 
                     to={`/product/${product._id}`}
-                    className="h-48 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100 overflow-hidden"
+                    className="h-72 bg-slate-50 flex items-center justify-center p-2 border-b border-slate-100 overflow-hidden"
                   >
                     <img
                       src={`/product_images/${product.imageName}`}
                       alt={product.name}
-                      className="max-h-full max-w-[90%] object-contain hover:scale-105 transition duration-300"
+                      className="max-h-full max-w-full object-contain hover:scale-105 transition duration-300"
                       onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
                     />
                   </Link>
@@ -236,9 +235,6 @@ export default function Products() {
                       <h3 className="font-extrabold text-slate-800 text-sm md:text-base mt-2 hover:text-primary">
                         <Link to={`/product/${product._id}`}>{product.name}</Link>
                       </h3>
-                      <p className="text-slate-500 text-xs leading-relaxed mt-1.5 line-clamp-2">
-                        {product.description}
-                      </p>
                     </div>
 
                     {/* Footer buttons */}

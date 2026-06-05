@@ -173,10 +173,9 @@ export default function CategoryPage() {
                 key={product._id}
                 className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md hover:border-primary/20 transition duration-300"
               >
-                {/* Image */}
                 <Link
                   to={`/product/${product._id}`}
-                  className="h-56 bg-slate-50 flex items-center justify-center p-6 border-b border-slate-100 overflow-hidden relative"
+                  className="h-72 bg-slate-50 flex items-center justify-center p-2 border-b border-slate-100 overflow-hidden relative"
                 >
                   <img
                     src={`/product_images/${product.imageName}`}
@@ -197,9 +196,6 @@ export default function CategoryPage() {
                     <h3 className="font-extrabold text-slate-800 text-base hover:text-primary transition duration-200">
                       <Link to={`/product/${product._id}`}>{product.name}</Link>
                     </h3>
-                    <p className="text-slate-500 text-xs leading-relaxed mt-2 line-clamp-2">
-                      {product.description}
-                    </p>
                   </div>
 
                   {/* Buttons */}
