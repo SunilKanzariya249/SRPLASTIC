@@ -12,86 +12,86 @@ export default function Home() {
       subtitle: "Precision Engineered Paver Block Moulds",
       description: "Manufactured using high-strength polymers that deliver pristine dimensional accuracy, smooth concrete surface finishes, and long lifecycle endurance.",
       image: "/paver block mould banner.png",
-      link: "/products?category=PVC Mould"
+      link: "/products?category=Paver-Block-Plastic-Mould"
     },
     {
       title: "HEAVY-DUTY INDUSTRIAL MACHINERY",
       subtitle: "Vibrator Tables, Roller Pan Mixers & Mixers",
       description: "Engineered for harsh factory workloads, high capacities (up to 4000 units/shift), and minimal power consumption.",
       image: "/paver block machinery banner.png",
-      link: "/products?category=Machinery"
+      link: "/products?category=Paver-Block-Machinery"
     },
     {
       title: "HIGH-QUALITY CHEMICALS & HARDENERS",
       subtitle: "Dual-Action Concrete Strength Enhancers",
       description: "Advanced superplasticizers and strengthening additives that boost concrete tensile strength and speed up demoulding cycles.",
       image: "/paver block chemicals hardner banner.png",
-      link: "/products?category=Chemicals%20%26%20Hardener"
+      link: "/products?category=Paver-Block-Chemicals"
     },
     {
       title: "VIBRANT IRON OXIDE COLORS",
       subtitle: "Premium UV-Resistant Coloring Pigments",
       description: "UV-stable iron oxide pigments with high dispersing capability that maintain bright concrete luster for years.",
       image: "/iron oxide color banner.png",
-      link: "/products?category=Color"
+      link: "/products?category=Iron-Oxide-Color"
     },
     {
       title: "RECYCLE PLASTIC SHEETS",
       subtitle: "Sustainable & Durable Recycle Plastic Sheets",
       description: "High-grade recycled plastic sheets offering outstanding durability, weather resistance, and utility for manufacturing palettes and setups.",
       image: "/recycle plastic sheet banner.jpeg",
-      link: "/products?category=Plastic Sheet"
+      link: "/products?category=Recycle-Plastic-Sheet"
     }
   ];
 
   const categories = [
     {
-      name: "PVC Paver Moulds",
+      name: "Paver Block Plastic Mould",
       count: "30+ Models",
       desc: "Prismatic molds like Colorado, Cosmic, Damru, and Hexagon for premium concrete blocks.",
       image: "/paver block plastic mould card.png",
-      query: "PVC Mould",
-      slug: "pvc-mould"
+      query: "Paver Block Plastic Mould",
+      slug: "Paver-Block-Plastic-Mould"
     },
     {
-      name: "Rubber Moulds",
+      name: "Paver Block PVC Rubber Mould",
       count: "40+ Models",
       desc: "Flexible, long-life, tear-resistant rubber molds for heavy-duty paving tiles.",
       image: "/paver block pvc rubber mould card.png",
-      query: "Rubber Mould",
-      slug: "rubber-mould"
+      query: "Paver Block PVC Rubber Mould",
+      slug: "Paver-Block-PVC-Rubber-Mould"
     },
     {
-      name: "Machinery & Mixers",
+      name: "Paver Block Machinery",
       count: "6+ Machines",
       desc: "Vibratory table layouts, pan concrete mixers, and color layer mixers.",
       image: "/paver block machinery card.png",
-      query: "Machinery",
-      slug: "machinery"
+      query: "Paver Block Machinery",
+      slug: "Paver-Block-Machinery"
     },
     {
-      name: "Chemicals & Hardeners",
+      name: "Paver Block Chemicals",
       count: "10+ Formulas",
       desc: "High-grade superplasticizers and chemical formulations to speed up concrete curing.",
       image: "/paver block chemicals hardner card.png",
-      query: "Chemicals & Hardener",
-      slug: "chemicals-hardner"
+      query: "Paver Block Chemicals",
+      slug: "Paver-Block-Chemicals"
     },
     {
-      name: "Iron Oxide Colors",
+      name: "Iron Oxide Color",
       count: "12+ Shades",
       desc: "UV-stable premium coloring pigments for lasting concrete block luster.",
       image: "/iron oxide color card.png",
-      query: "Color",
-      slug: "color"
+      query: "Iron Oxide Color",
+      slug: "Iron-Oxide-Color"
     },
     {
-      name: "Recycle Plastic Sheets",
+      name: "Recycle Plastic Sheet",
       count: "Eco-Friendly",
       desc: "Sustainable, high-durability plastic sheets for industrial stack palettes.",
       image: "/recycle plastic sheet card.png",
-      query: "Plastic Sheet",
-      slug: "plastic-sheet"
+      query: "Recycle Plastic Sheet",
+      slug: "Recycle-Plastic-Sheet"
     }
   ];
 
@@ -305,18 +305,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((cat, idx) => (
-              <Link
-                key={idx}
-                to={`/category/${cat.slug}`}
-                className="relative block rounded-2xl shadow-md hover:shadow-xl overflow-hidden border border-slate-200 group transition duration-300"
-              >
-                <img
-                  src={cat.image}
-                  alt={cat.name}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
-                />
-              </Link>
+              <CategoryCard key={idx} cat={cat} />
             ))}
           </div>
         </div>
@@ -425,5 +414,79 @@ export default function Home() {
         </div>
       </section>
     </div>
+  );
+}
+
+function CategoryCard({ cat }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = React.useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.15 } // trigger when 15% of the element is visible
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <Link
+      ref={cardRef}
+      to={`/category/${cat.slug}`}
+      className="relative block rounded-2xl shadow-md hover:shadow-xl overflow-hidden border border-slate-200 group transition duration-300 bg-white"
+    >
+      <img
+        src={cat.image}
+        alt={cat.name}
+        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        onError={(e) => { e.target.src = '/product_images/page_1.png'; }}
+      />
+      
+      {/* Overlay container: shows on hover on desktop, or when visible in viewport on mobile */}
+      <div className={`absolute inset-0 bg-transparent md:bg-primary/45 flex flex-col items-center justify-end md:justify-center p-6 pb-8 md:pb-6 text-center transition-all duration-500 md:opacity-0 md:group-hover:opacity-100 ${
+        isVisible ? 'opacity-100 md:opacity-0' : 'opacity-0'
+      }`}>
+        {/* Category Info */}
+        <div className={`hidden md:block text-white transition-all duration-500 ${
+          isVisible 
+            ? 'translate-y-0 opacity-100 md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100' 
+            : 'translate-y-4 opacity-0'
+        }`}>
+          <span className="text-[10px] font-bold text-secondary bg-primary/80 px-2.5 py-1 rounded inline-block mb-2 backdrop-blur-sm shadow-sm border border-secondary/20">
+            {cat.count}
+          </span>
+          <h3 className="text-lg md:text-xl font-black tracking-tight leading-tight mb-2 drop-shadow-md">
+            {cat.name}
+          </h3>
+          <p className="text-xs text-slate-200 leading-relaxed max-w-[240px] mx-auto mb-6 drop-shadow-sm font-medium">
+            {cat.desc}
+          </p>
+        </div>
+
+        {/* Button: appears/slides up */}
+        <span className={`bg-secondary text-primary font-bold px-5 py-2.5 rounded-lg shadow-lg text-xs md:text-sm tracking-wider uppercase transition-all duration-500 ease-out transform delay-1000 md:delay-0 ${
+          isVisible 
+            ? 'translate-y-0 scale-100 opacity-100 md:translate-y-6 md:scale-95 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:scale-100 md:group-hover:opacity-100' 
+            : 'translate-y-6 scale-95 opacity-0'
+        }`}>
+          VIEW PRODUCTS
+        </span>
+      </div>
+    </Link>
   );
 }
