@@ -145,12 +145,12 @@ ${formData.message}
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
+      <div className="flex justify-between items-center px-6 md:px-12 py-4 w-full">
         <Link to="/" className="flex items-center space-x-3">
           <img 
             src="/sr-logo.jpeg" 
             alt="SR Plastic Logo" 
-            className="w-auto h-10  object-cover" 
+            className="w-auto h-10 object-cover" 
             onError={(e) => { e.target.style.display = 'none'; }}
           />
           
