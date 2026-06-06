@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, ShoppingCart, Trash2, ArrowRight, ChevronRight, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, ShoppingCart, Trash2, ArrowRight, ChevronRight, ChevronDown, MapPin, Download } from 'lucide-react';
 import { useQuote } from '../context/QuoteContext';
 
 export default function Header() {
@@ -112,20 +112,37 @@ ${formData.message}
   return (
     <header className="sticky top-0 z-40 bg-white shadow-md">
       {/* Top Utility Bar */}
-      <div className="hidden md:flex bg-primary text-white text-xs py-2 px-6 justify-between items-center">
-        <div className="flex items-center space-x-6">
-          <a href="tel:+919876543210" className="flex items-center space-x-1 hover:text-secondary transition">
-            <Phone size={12} />
+      <div className="hidden md:flex bg-slate-950 text-slate-300 text-sm py-3 px-6 justify-between items-center border-b border-slate-900">
+        <div className="flex items-center space-x-5">
+          <a href="tel:+919876543210" className="flex items-center space-x-1.5 hover:text-secondary transition duration-200 font-medium tracking-wide">
+            <Phone size={14} className="text-secondary" />
             <span>+91 98765 43210</span>
           </a>
-          <a href="mailto:info@srplastic.com" className="flex items-center space-x-1 hover:text-secondary transition">
-            <Mail size={12} />
+          <span className="w-[1px] h-4 bg-slate-800" />
+          <a href="mailto:info@srplastic.com" className="flex items-center space-x-1.5 hover:text-secondary transition duration-200 font-medium tracking-wide">
+            <Mail size={14} className="text-secondary" />
             <span>info@srplastic.com</span>
           </a>
+          <span className="w-[1px] h-4 bg-slate-800" />
+          <div className="flex items-center space-x-1.5 text-slate-400 font-medium tracking-wide">
+            <MapPin size={14} className="text-secondary/80" />
+            <span>Gujarat, India</span>
+          </div>
         </div>
+        
         <div className="flex items-center space-x-4">
-          <span className="bg-secondary text-primary px-2 py-0.5 rounded text-[10px] font-bold">ISO 9001:2015 CERTIFIED</span>
-          <span className="opacity-80">Domestic Manufacturer & Supplier</span>
+          <span className="text-[11px] font-bold uppercase tracking-widest text-slate-400 bg-white/5 px-3 py-1 rounded border border-white/5">
+            Mfg. & Exporter
+          </span>
+          <span className="w-[1px] h-4 bg-slate-800" />
+          <a 
+            href="/sr-plastics.pdf" 
+            download="sr-plastics.pdf"
+            className="flex items-center gap-1.5 bg-secondary hover:bg-secondary-dark text-primary font-extrabold px-4 py-1.5 rounded-full text-[11px] tracking-wider uppercase transition-all duration-200 shadow-sm hover:shadow active:scale-95"
+          >
+            <Download size={13} className="stroke-[3]" />
+            <span>Company Profile</span>
+          </a>
         </div>
       </div>
 
