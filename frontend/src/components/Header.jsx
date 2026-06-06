@@ -27,7 +27,6 @@ export default function Header() {
     name: '',
     email: '',
     phone: '',
-    companyName: '',
     message: ''
   });
 
@@ -52,7 +51,6 @@ export default function Header() {
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
-Company: ${formData.companyName || 'N/A'}
 Subject: Bulk Product Quote Request
 
 Requested Products List:
@@ -95,7 +93,7 @@ ${formData.message}
       if (data.success) {
         setInquirySubmitted(true);
         clearQuote();
-        setFormData({ name: '', email: '', phone: '', companyName: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
         alert(data.message || 'Something went wrong. Please try again.');
       }
@@ -223,10 +221,10 @@ ${formData.message}
           {/* Call-to-action button */}
           <button
             onClick={() => setCartOpen(true)}
-            className="hidden lg:flex bg-secondary hover:bg-secondary-dark text-primary font-bold px-5 py-2.5 rounded-lg shadow transition items-center space-x-2 text-sm"
+            className="hidden lg:flex bg-secondary hover:bg-secondary-dark text-primary font-black px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover:shadow-secondary/25 hover:scale-[1.02] active:scale-95 transition-all duration-300 items-center space-x-2 text-xs tracking-widest uppercase"
           >
             <span>GET A QUOTE</span>
-            <ArrowRight size={16} />
+            <ArrowRight size={14} className="stroke-[3]" />
           </button>
 
           {/* Hamburger Menu Trigger */}
@@ -323,9 +321,10 @@ ${formData.message}
 
           <button
             onClick={() => { setMobileMenuOpen(false); setCartOpen(true); }}
-            className="w-full bg-primary hover:bg-primary-dark text-white text-center font-bold py-3.5 rounded-xl transition shadow-md text-sm tracking-wide"
+            className="w-full bg-secondary hover:bg-secondary-dark text-primary flex items-center justify-center space-x-2 font-black py-3.5 rounded-full shadow-md hover:shadow-lg hover:shadow-secondary/25 active:scale-[0.98] transition-all duration-300 text-xs tracking-widest uppercase"
           >
-            Get a Quote ({quoteCount})
+            <span>GET A QUOTE ({quoteCount})</span>
+            <ArrowRight size={14} className="stroke-[3]" />
           </button>
         </div>
       )}
@@ -478,17 +477,7 @@ ${formData.message}
                                 />
                               </div>
                             </div>
-                            <div>
-                              <label className="block text-xs font-semibold text-slate-600 mb-1">Company Name</label>
-                              <input
-                                type="text"
-                                name="companyName"
-                                value={formData.companyName}
-                                onChange={handleInputChange}
-                                className="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none"
-                                placeholder="Company Ltd."
-                              />
-                            </div>
+
                             <div>
                               <label className="block text-xs font-semibold text-slate-600 mb-1">Additional Requirements / Message *</label>
                               <textarea

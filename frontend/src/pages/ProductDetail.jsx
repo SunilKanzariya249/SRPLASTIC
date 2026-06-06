@@ -17,7 +17,6 @@ export default function ProductDetail() {
     name: '',
     email: '',
     phone: '',
-    companyName: '',
     message: ''
   });
 
@@ -75,7 +74,6 @@ export default function ProductDetail() {
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
-Company: ${formData.companyName || 'N/A'}
 Subject: Product Inquiry: ${product.name}
 Product Requested: ${product.name} (Qty: ${quantity})
 Message: ${formData.message}
@@ -109,7 +107,7 @@ Message: ${formData.message}
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
-        setFormData({ name: '', email: '', phone: '', companyName: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
         alert(data.message || 'Something went wrong.');
       }
@@ -283,30 +281,17 @@ Message: ${formData.message}
                     />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Email Address *</label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2 text-xs focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none"
-                      placeholder="name@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Company Name</label>
-                    <input
-                      type="text"
-                      name="companyName"
-                      value={formData.companyName}
-                      onChange={handleInputChange}
-                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2 text-xs focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none"
-                      placeholder="Optional"
-                    />
-                  </div>
+                <div>
+                  <label className="block text-xs font-semibold text-slate-600 mb-1">Email Address *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2 text-xs focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none"
+                    placeholder="name@email.com"
+                  />
                 </div>
                 <div>
                   <label className="block text-xs font-semibold text-slate-600 mb-1">Requirements / Message *</label>
