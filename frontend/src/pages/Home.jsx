@@ -96,10 +96,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "1,200+", label: "Happy Client Factories" },
-    { value: "95+", label: "Product Catalogue Size" },
-    { value: "12+", label: "Years Manufacturing Exp." },
-    { value: "24/7", label: "Client Support & Guidance" }
+    { value: "50+", label: "Happy Clients" },
+    { value: "39+", label: "Dealers" },
+    { value: "2+", label: "Years of Experience" },
+    { value: "20+", label: "Projects Completed" }
   ];
 
   const testimonials = [
@@ -284,14 +284,23 @@ export default function Home() {
       </section>
 
        {/* Stats Counter Section */}
-      <section className="bg-primary text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {stats.map((stat, idx) => (
-            <div key={idx} className="space-y-1">
-              <p className="text-4xl md:text-5xl font-black text-secondary">{stat.value}</p>
-              <p className="text-xs md:text-sm text-slate-300 tracking-wider uppercase font-semibold">{stat.label}</p>
-            </div>
-          ))}
+      <section className="bg-slate-950 py-16 border-y border-slate-900 relative overflow-hidden">
+        {/* Subtle glow effect in the background */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[150px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x divide-slate-800/80 text-center">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="space-y-2 group lg:px-4">
+                <p className="text-4xl md:text-5xl font-black text-secondary tracking-tight transition duration-300 group-hover:scale-105 inline-block">
+                  {stat.value}
+                </p>
+                <p className="text-xs md:text-sm text-slate-400 tracking-widest uppercase font-bold">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
