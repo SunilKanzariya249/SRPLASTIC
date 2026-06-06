@@ -126,10 +126,9 @@ Message: ${formData.message}
                   <Phone size={22} className="stroke-[2]" />
                 </div>
                 <div>
-                  <h4 className="font-extrabold text-slate-800 text-base">Phone Numbers</h4>
+                  <h4 className="font-extrabold text-slate-800 text-base">Phone Number</h4>
                   <p className="text-slate-500 text-sm mt-1.5 leading-relaxed font-medium">
-                    Plant: <a href="tel:+919876543210" className="text-primary hover:underline font-extrabold">+91 98765 43210</a> <br />
-                    Sales Helpline: <a href="tel:+919876543211" className="text-primary hover:underline font-extrabold">+91 98765 43211</a>
+                    Mobile: <a href="tel:+919316642648" className="text-primary hover:underline font-extrabold">+91 93166 42648</a>
                   </p>
                 </div>
               </div>
@@ -139,10 +138,9 @@ Message: ${formData.message}
                   <Mail size={22} className="stroke-[2]" />
                 </div>
                 <div>
-                  <h4 className="font-extrabold text-slate-800 text-base">Email Addresses</h4>
+                  <h4 className="font-extrabold text-slate-800 text-base">Email Address</h4>
                   <p className="text-slate-500 text-sm mt-1.5 leading-relaxed font-medium">
-                    General: <a href="mailto:info@srplastic.com" className="text-primary hover:underline font-extrabold">info@srplastic.com</a> <br />
-                    Inquiries: <a href="mailto:sales@srplastic.com" className="text-primary hover:underline font-extrabold">sales@srplastic.com</a>
+                    Email: <a href="mailto:kanzariyasunil249@gmail.com" className="text-primary hover:underline font-extrabold">kanzariyasunil249@gmail.com</a>
                   </p>
                 </div>
               </div>

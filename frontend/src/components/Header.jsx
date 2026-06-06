@@ -114,12 +114,12 @@ ${formData.message}
         <div className="flex items-center space-x-5">
           <a href="tel:+919876543210" className="flex items-center space-x-1.5 hover:text-secondary transition duration-200 font-medium tracking-wide">
             <Phone size={14} className="text-secondary" />
-            <span>+91 98765 43210</span>
+            <span>+91 93166 42648</span>
           </a>
           <span className="w-[1px] h-4 bg-slate-800" />
           <a href="mailto:info@srplastic.com" className="flex items-center space-x-1.5 hover:text-secondary transition duration-200 font-medium tracking-wide">
             <Mail size={14} className="text-secondary" />
-            <span>info@srplastic.com</span>
+            <span>kanzariyasunil249@gmail.com</span>
           </a>
           <span className="w-[1px] h-4 bg-slate-800" />
           <div className="flex items-center space-x-1.5 text-slate-400 font-medium tracking-wide">
