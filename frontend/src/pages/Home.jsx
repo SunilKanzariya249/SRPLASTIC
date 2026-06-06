@@ -395,6 +395,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Infinite Scrolling Marquee */}
+      <section className="bg-slate-200 py-0 my-0 overflow-hidden border-y border-slate-300 relative h-fit flex items-center">
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-marquee-ultraslow {
+            display: flex;
+            width: max-content;
+            animation: marquee 130s linear infinite;
+          }
+        `}</style>
+        <div className="animate-marquee-ultraslow flex whitespace-nowrap space-x-12 md:space-x-16 py-0 my-0 leading-none">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="flex items-center space-x-12 md:space-x-16 text-5xl md:text-7xl font-black uppercase tracking-widest text-white leading-none py-0 my-0">
+              <span className="leading-none py-0 my-0 select-none">SR PLASTIC - MACHINERY & CHEMICALS</span>
+            </div>
+          ))}
+          {[...Array(12)].map((_, i) => (
+            <div key={i+12} className="flex items-center space-x-12 md:space-x-16 text-5xl md:text-7xl font-black uppercase tracking-widest text-white leading-none py-0 my-0">
+              <span className="leading-none py-0 my-0 select-none">SR PLASTIC - MACHINERY & CHEMICALS</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-3xl mx-auto px-6">

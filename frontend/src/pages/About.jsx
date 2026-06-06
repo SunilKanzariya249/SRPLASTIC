@@ -1,5 +1,6 @@
 import React from 'react';
-import { ShieldCheck, Award, ThumbsUp, Wrench, FileText, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ShieldCheck, Award, ThumbsUp, Wrench, FileText, CheckCircle2, Target, Eye, Gem } from 'lucide-react';
 
 export default function About() {
   const benefits = [
@@ -28,50 +29,93 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Page Header */}
-      <section className="bg-primary text-white py-16 text-center border-b-4 border-secondary">
-        <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight">About SR PLASTIC</h1>
-          <p className="text-slate-300 text-xs md:text-sm mt-3 tracking-widest uppercase font-semibold">Our Journey, Quality focus & Core Pillars</p>
+      <section className="relative overflow-hidden bg-slate-950 py-20 border-b-4 border-secondary group transition-all duration-300">
+        {/* Hover-reveal background image */}
+        <div 
+          className="absolute inset-0 bg-[length:100%_100%] bg-center bg-no-repeat opacity-0 group-hover:opacity-80 transition-all duration-700 scale-105 group-hover:scale-100 pointer-events-none z-0"
+          style={{ backgroundImage: "url('/about-contact-page banner .png')" }}
+        />
+        {/* Gradient overlay to enhance text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/50 to-slate-950/80 z-10 pointer-events-none" />
+        
+        <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-8">
+          <div className="border-l-4 border-secondary pl-5 md:pl-7">
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white drop-shadow-md animate-fade-in">About SR PLASTIC</h1>
+            <p className="text-secondary text-xs md:text-sm mt-3 tracking-widest uppercase font-bold drop-shadow-md">Our Journey, Quality focus & Core Pillars</p>
+          </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-xs font-bold text-secondary tracking-widest uppercase">WHO WE ARE</h2>
-            <p className="text-2xl md:text-3xl font-black text-primary leading-tight">
-              Leading the Construction Precast Mould Industry Since 2014
-            </p>
-            <div className="w-12 h-1 bg-secondary"></div>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              SR PLASTIC is a premier manufacturer, supplier, and exporter of high-grade PVC moulds, rubber moulds, and cover block systems for concrete precasts. Based in Gujarat, we serve over 1,200 factories across the country with precision-engineered casting solutions.
-            </p>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              We also fabricate heavy-duty plant mixers, color mixers, and vibratory casting tables. Our goal is to streamline the paver block manufacturing process, allowing our clients to produce highly durable, smooth-surface concrete tiles with minimal rejection rates.
-            </p>
-          </div>
-          
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-sm">
-            <h3 className="font-extrabold text-slate-800 text-lg">Our Quality Assurance Commitment</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3 text-sm text-slate-600">
-                <CheckCircle2 className="text-primary mt-0.5 flex-shrink-0" size={18} />
-                <span>100% inspections of polymer melt parameters to prevent cracking.</span>
-              </li>
-              <li className="flex items-start space-x-3 text-sm text-slate-600">
-                <CheckCircle2 className="text-primary mt-0.5 flex-shrink-0" size={18} />
-                <span>Heavy-duty steel plates (8mm to 10mm thickness) on vibratory machines.</span>
-              </li>
-              <li className="flex items-start space-x-3 text-sm text-slate-600">
-                <CheckCircle2 className="text-primary mt-0.5 flex-shrink-0" size={18} />
-                <span>UV-resistant color oxides that do not fade under hot sun exposure.</span>
-              </li>
-              <li className="flex items-start space-x-3 text-sm text-slate-600">
-                <CheckCircle2 className="text-primary mt-0.5 flex-shrink-0" size={18} />
-                <span>Strict weight parameters on all cement spacer cover blocks.</span>
-              </li>
-            </ul>
+      <section className="py-20 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+             {/* Left Poster Column */}
+            <Link to="/products" className="relative group block">
+              {/* Background decorative colored sheet */}
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              
+              {/* Image wrapper */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white bg-slate-100">
+                <img 
+                  src="/about page poster.png" 
+                  alt="SR Plastic About Us Poster" 
+                  className="w-full h-auto object-cover transition duration-700 ease-out group-hover:scale-105"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none transition duration-500 group-hover:from-primary/5" />
+              </div>
+            </Link>
+
+            {/* Right Content Column */}
+            <div className="space-y-6">
+              <div>
+                <span className="text-xs font-bold text-secondary tracking-widest uppercase mb-2 bg-secondary/15 px-3 py-1 rounded inline-block">
+                  ABOUT US
+                </span>
+                <h2 className="text-3xl md:text-5xl font-black text-primary leading-tight tracking-tight mt-2">
+                  SR Plastic
+                </h2>
+                <div className="w-12 h-1 bg-secondary mt-3"></div>
+              </div>
+
+              <div className="text-slate-600 text-sm md:text-base leading-relaxed space-y-4 font-medium">
+                <p>
+                  SR Plastic specializes in providing high-quality solutions for the paver block manufacturing industry. Founded by <strong className="text-primary font-extrabold">Rohit Hadiyal</strong>, we offer premium <strong className="text-primary font-bold">Paver Block Chemicals, Iron Oxide Colors, Paver Block Moulds, and Machinery</strong> designed to deliver consistent performance and reliable results.
+                </p>
+                <p>
+                  With a strong commitment to quality, innovation, and customer satisfaction, we help manufacturers improve product durability, production efficiency, and overall business growth. Our focus is to provide dependable products and professional support that meet the evolving demands of the construction industry.
+                </p>
+              </div>
+
+              {/* Checklist */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4">
+                {[
+                  "Premium Quality Products",
+                  "Complete Paver Block Solutions",
+                  "Reliable Performance & Consistency",
+                  "Customer-Focused Service",
+                  "Trusted Industry Expertise",
+                  "Commitment to Excellence"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center space-x-2.5 text-slate-700 text-sm font-semibold">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-[10px] font-bold border border-emerald-150">
+                      ✔
+                    </span>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Tagline Callout */}
+              <div className="pt-4">
+                <div className="p-4 bg-slate-50 border-l-4 border-secondary rounded-r-xl">
+                  <p className="text-primary font-black italic text-sm md:text-base tracking-wide">
+                    Building Strength, Delivering Quality, Creating Trust.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -79,27 +123,40 @@ export default function About() {
       {/* Vision Mission Values */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm text-center space-y-4">
-            <div className="w-12 h-12 bg-primary/10 text-primary mx-auto rounded-full flex items-center justify-center font-black">M</div>
-            <h3 className="font-extrabold text-slate-800 text-base">Our Mission</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
+          
+          {/* Mission Card */}
+          <div className="bg-white p-8 rounded-2xl border border-slate-100 border-b-4 border-b-secondary shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group">
+            <div className="w-14 h-14 bg-gradient-to-tr from-secondary to-amber-500 text-white rounded-2xl flex items-center justify-center shadow-md shadow-secondary/25 mb-6 group-hover:rotate-6 transition duration-300">
+              <Target size={24} className="stroke-[2]" />
+            </div>
+            <h3 className="font-extrabold text-slate-800 text-lg mb-2">Our Mission</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">
               To supply factory operators with high-strength moulds and robust machinery that maximize casting throughput and minimize raw material waste.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm text-center space-y-4">
-            <div className="w-12 h-12 bg-primary/10 text-primary mx-auto rounded-full flex items-center justify-center font-black">V</div>
-            <h3 className="font-extrabold text-slate-800 text-base">Our Vision</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
+
+          {/* Vision Card */}
+          <div className="bg-white p-8 rounded-2xl border border-slate-100 border-b-4 border-b-secondary shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group">
+            <div className="w-14 h-14 bg-gradient-to-tr from-secondary to-amber-500 text-white rounded-2xl flex items-center justify-center shadow-md shadow-secondary/25 mb-6 group-hover:rotate-6 transition duration-300">
+              <Eye size={24} className="stroke-[2]" />
+            </div>
+            <h3 className="font-extrabold text-slate-800 text-lg mb-2">Our Vision</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">
               To be India’s most trusted manufacturer for construction precast moulds, pioneering innovative polymer molds and energy-efficient mixers.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm text-center space-y-4">
-            <div className="w-12 h-12 bg-primary/10 text-primary mx-auto rounded-full flex items-center justify-center font-black">Q</div>
-            <h3 className="font-extrabold text-slate-800 text-base">Quality Values</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
+
+          {/* Quality Values Card */}
+          <div className="bg-white p-8 rounded-2xl border border-slate-100 border-b-4 border-b-secondary shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group">
+            <div className="w-14 h-14 bg-gradient-to-tr from-secondary to-amber-500 text-white rounded-2xl flex items-center justify-center shadow-md shadow-secondary/25 mb-6 group-hover:rotate-6 transition duration-300">
+              <Gem size={24} className="stroke-[2]" />
+            </div>
+            <h3 className="font-extrabold text-slate-800 text-lg mb-2">Quality Values</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">
               Zero tolerance for material impurities, prompt shipments, absolute integrity in business deals, and continuous customer help.
             </p>
           </div>
+
         </div>
       </section>
 

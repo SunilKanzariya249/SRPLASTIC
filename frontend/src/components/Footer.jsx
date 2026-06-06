@@ -139,8 +139,8 @@ export default function Footer() {
           <div className="flex items-start space-x-3">
             <MapPin size={16} className="text-secondary mt-1 flex-shrink-0" />
             <span className="text-slate-400 leading-relaxed">
-              Phase-III, GIDC Industrial Estate,<br />
-              Vatva, Ahmedabad, Gujarat 382445
+              Satwara Estate, Near Panchasar Rd,<br />
+              Rajnagar, Sardar Nagar, Morbi, Gujarat 363641
             </span>
           </div>
           <div className="flex items-center space-x-3">
