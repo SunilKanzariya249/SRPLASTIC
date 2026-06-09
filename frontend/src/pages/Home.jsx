@@ -171,15 +171,24 @@ Message: ${formData.message}
 
   const testimonials = [
     {
-      quote: "SR PLASTIC's PVC moulds have transformed our production quality. The dimensional finish is extremely smooth, and we get over 200 cycles of cast-release per mould without warping.",
-      author: "Rajesh Patel",
-      role: "MD, Patel Concrete Products",
+      title: "Outstanding Product Quality",
+      quote: "We have been using SR Plastic's paver block moulds for our manufacturing unit, and the quality has been consistently excellent. The moulds are durable, accurate, and help us maintain smooth production with minimal maintenance.",
+      author: "Nirav Patel",
+      role: "Production Manager",
       rating: 5
     },
     {
-      quote: "The vibratory table and pan mixer we bought last year have been running 10 hours a day without a single failure. The heavy-duty worm gears are highly reliable.",
-      author: "Vikramjit Singh",
-      role: "Founder, Punjab Paver Block Industry",
+      title: "Trusted Manufacturing Partner",
+      quote: "SR Plastic has been a reliable supplier for our business. Their iron oxide colors and hardener chemicals deliver consistent results, and their team is always responsive whenever we need technical assistance or product recommendations.",
+      author: "Karan Mehta",
+      role: "Operations Head",
+      rating: 5
+    },
+    {
+      title: "Excellent Service & Support",
+      quote: "We approached SR Plastic for injection moulding job work and recycled plastic sheet requirements. The entire process was professional, timely, and cost-effective. Their commitment to customer satisfaction makes them a valuable business partner.",
+      author: "Rahul Joshi",
+      role: "Procurement Executive",
       rating: 5
     }
   ];
@@ -439,6 +448,11 @@ Message: ${formData.message}
                 <Star key={i} size={20} fill="currentColor" />
               ))}
             </div>
+            {testimonials[activeTestimonial].title && (
+              <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3">
+                {testimonials[activeTestimonial].title}
+              </h3>
+            )}
             <p className="text-slate-600 text-base md:text-lg italic leading-relaxed mb-6">
               "{testimonials[activeTestimonial].quote}"
             </p>
