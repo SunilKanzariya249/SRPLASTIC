@@ -188,20 +188,16 @@ Message: ${formData.message}
 
   const faqs = [
     {
-      q: "What materials are used in SR PLASTIC's PVC & Rubber moulds?",
-      a: "Our PVC moulds are manufactured from premium virgin polypropylene/plastic polymers, which offer high flexural strength and surface gloss. Our rubber moulds are engineered from premium vulcanized rubber for excellent flexibility and easy demoulding."
+      q: "Why Choose SR Plastic?",
+      a: "SR Plastic is a trusted manufacturer and supplier of high-quality Paver Block Moulds, Paver Block Machines, Iron Oxide Colors, Recycled Plastic Sheets, Hardener Chemicals, and Injection Moulding Job Work services. We focus on delivering reliable products, consistent quality, and cost-effective solutions that help businesses improve productivity and reduce manufacturing costs."
     },
     {
-      q: "How many cycles can we expect from a single paver block mould?",
-      a: "With proper care, cleaning, and demoulding agents, our PVC moulds easily deliver 150 to 200+ cast cycles. Our heavy-duty rubber moulds can withstand 300+ casting cycles."
+      q: "What Makes SR Plastic Different?",
+      a: "Our commitment to quality, innovation, and customer satisfaction sets us apart. We use durable materials, modern manufacturing processes, and strict quality control to ensure every product meets industry standards. With years of experience and dedicated customer support, we provide solutions tailored to the needs of each client."
     },
     {
-      q: "Do you supply machinery for starting a new paver block factory?",
-      a: "Yes! We provide the full machinery package including Vibrator Tables, Roller Pan Mixers, Color Mixers, and raw materials like iron oxide colors, hardener chemicals, and recycling stacking pallets."
-    },
-    {
-      q: "What is your typical order delivery time?",
-      a: "For catalog moulds, orders are dispatched within 2-4 business days. For customized machinery, delivery time ranges between 7 to 10 working days, depending on current orders."
+      q: "How Can I Place an Order or Request a Quote?",
+      a: "Simply contact SR Plastic through our website, phone, or email with your requirements. Whether you need Paver Block Moulds, Machinery, Iron Oxide Colors, Recycled Plastic Sheets, Hardener Chemicals, or Injection Moulding services, our team will provide expert guidance and a customized quotation based on your needs."
     }
   ];
 
@@ -588,30 +584,83 @@ Message: ${formData.message}
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-xs font-bold text-secondary tracking-widest uppercase mb-2">HELP CENTER</h2>
-            <p className="text-3xl font-black text-primary">Frequently Asked Questions</p>
-          </div>
-
-          <div className="space-y-4">
-            {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm">
-                <button
-                  onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                  className="w-full flex justify-between items-center p-5 text-left font-bold text-sm md:text-base text-slate-800 hover:text-primary transition focus:outline-none"
-                >
-                  <span>{faq.q}</span>
-                  <span className="text-secondary ml-4">{activeFaq === idx ? '−' : '+'}</span>
-                </button>
-                {activeFaq === idx && (
-                  <div className="p-5 border-t border-slate-100 bg-slate-50 text-slate-600 text-xs md:text-sm leading-relaxed">
-                    {faq.a}
-                  </div>
-                )}
+      {/* Modern FAQ / Why Choose Us Section */}
+      <section className="relative py-20 bg-[#f8f9fb] border-t border-slate-200 overflow-hidden">
+        {/* Subtle geometric grid & dots pattern with low opacity */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#243b53_1px,transparent_1px)] [background-size:16px_16px]" />
+        <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[linear-gradient(to_right,#243b53_1px,transparent_1px),linear-gradient(to_bottom,#243b53_1px,transparent_1px)] [background-size:40px_40px]" />
+        
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left side: FAQs (60% width) */}
+            <div className="lg:col-span-7 space-y-8">
+              <div>
+                <span className="text-red-600 font-extrabold text-xs tracking-wider uppercase mb-2 block">
+                  FREQUENTLY ASKED QUESTIONS
+                </span>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-[#243b53] leading-tight tracking-tight">
+                  Why Should You Work With SR Plastic?
+                </h2>
               </div>
-            ))}
+              
+              <div className="space-y-4">
+                {faqs.map((faq, idx) => {
+                  const isOpen = activeFaq === idx;
+                  return (
+                    <div 
+                      key={idx} 
+                      className={`bg-white rounded-[12px] border transition-all duration-300 overflow-hidden ${
+                        isOpen ? 'border-[#243b53] shadow-md' : 'border-slate-100 shadow-sm hover:shadow-md'
+                      }`}
+                    >
+                      <button
+                        onClick={() => setActiveFaq(isOpen ? null : idx)}
+                        className="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
+                      >
+                        <span className={`font-extrabold text-base md:text-lg transition-colors duration-300 ${
+                          isOpen ? 'text-[#243b53]' : 'text-slate-800 group-hover:text-[#243b53]'
+                        }`}>
+                          {faq.q}
+                        </span>
+                        <span className={`flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                          isOpen ? 'bg-[#243b53] text-white' : 'bg-slate-50 text-[#c89b2b] group-hover:bg-[#c89b2b]/15'
+                        }`}>
+                          {isOpen ? (
+                            <span className="font-extrabold text-lg leading-none mt-[-2px]">&minus;</span>
+                          ) : (
+                            <span className="font-extrabold text-lg leading-none mt-[-2px]">+</span>
+                          )}
+                        </span>
+                      </button>
+                      <div 
+                        className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                          isOpen ? 'max-h-[400px] opacity-100 border-t border-slate-100' : 'max-h-0 opacity-0 pointer-events-none'
+                        }`}
+                      >
+                        <div className="p-6 text-slate-600 text-sm md:text-base leading-relaxed font-medium bg-[#f8f9fb]/50">
+                          {faq.a}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            
+            {/* Right side: Large AI-generated Industrial Image (40% width) */}
+            <div className="lg:col-span-5 relative group">
+              <div className="absolute -inset-2 bg-gradient-to-tr from-[#c89b2b] to-[#243b53] rounded-2xl opacity-15 blur-lg group-hover:opacity-25 transition duration-300" />
+              <div className="relative overflow-hidden rounded-2xl border border-slate-200/80 shadow-lg bg-white">
+                <img
+                  src="/sr_plastic_factory.png"
+                  alt="SR Plastic Modern Manufacturing Facility"
+                  className="w-full h-auto object-cover aspect-[4/3] lg:aspect-[5/6] transform hover:scale-[1.03] transition duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#243b53]/40 via-transparent to-transparent pointer-events-none" />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
